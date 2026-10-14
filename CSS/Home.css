@@ -429,6 +429,7 @@ h1,h2,h3,h4{font-family:var(--font-d);font-weight:600;line-height:1.08;color:inh
 .svc-hint i{color:var(--amber);font-size:1.1rem;animation:hint-nudge 1.6s ease-in-out infinite}
 @keyframes hint-nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(10px)}}
 .svc-scroll{overflow:hidden;padding-bottom:90px}
+@media (min-width:1081px){.svc-scroll{padding-top:100px}}
 .svc-track{display:flex;gap:24px;width:max-content;padding-left:max(4vw,calc((100vw - 1240px)/2));padding-right:8vw}
 .svc{
   position:relative;flex:0 0 400px;background:var(--white);border-radius:var(--radius);overflow:hidden;
@@ -917,6 +918,7 @@ h1,h2,h3,h4{font-family:var(--font-d);font-weight:600;line-height:1.08;color:inh
   .about{padding:70px 0}
   .about-visual{padding:30px 0 44px 18px}
   .about-thumb--big{aspect-ratio:4/4.6}
+  .about-thumb--big figcaption{top:38px;bottom:auto}
   .services{padding-top:70px}
   .svc-scroll{overflow:visible;padding-bottom:0}
   .svc-track{display:flex;flex-direction:column;gap:20px;width:100%;padding:0 max(4vw,calc((100vw - 1240px)/2)) 26px}

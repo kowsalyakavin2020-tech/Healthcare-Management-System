@@ -549,7 +549,7 @@ h1,h2,h3,h4{font-family:var(--font-d);font-weight:600;line-height:1.08;color:inh
 .day-track{display:flex;flex-direction:column;align-items:center;gap:34px}
 .day-pin.h .day-track{
   flex-direction:row;width:max-content;align-items:stretch;gap:56px;
-  padding:44px 0 74px;
+  padding:100px 0 74px;
 }
 .day-cd{position:relative;flex:0 0 auto;width:min(78vw,560px)}
 .day-pin.h .day-cd{width:min(64vw,720px)}
