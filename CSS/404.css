@@ -303,3 +303,23 @@ h1,h2,h3{font-family:var(--font-d);font-weight:600;line-height:1.08}
   .nf-kicker,.nf-code-wrap,.nf-title,.nf-sub,.nf-actions,.nf-hint{opacity:1!important;transform:none!important;animation:none!important}
   .nf-flash{display:none}
 }
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+ 
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+ 
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+ 
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+ 
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}

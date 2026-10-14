@@ -855,3 +855,24 @@ h1,h2,h3,h4{font-family:var(--font-d);font-weight:600;line-height:1.08;color:inh
   .pre-ring,.pre-intro-mark,.pre-pulse,.pre-cross{animation:none!important}
   .cx-col{transition:none}
 }
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+ 
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+ 
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+ 
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+ 
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
