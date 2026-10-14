@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Stackly — Talk to a real human, fast</title>
+  <meta name="description" content="Get in touch with Stackly. Call, email, chat or visit — reach the right desk in seconds, find us on the map and send a message that a real person answers.">
+  <link rel="icon" type="image/webp" href="../Images/logo-icon.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+<body>
+
+<!-- ================= PRELOADER ================= -->
+<div id="preloader">
+  <div class="pre-grid"></div>
+  <div class="pre-center">
+    <div class="pre-orbit">
+      <span class="pre-pulse"></span>
+      <span class="pre-ring pre-ring--a"></span>
+      <span class="pre-ring pre-ring--b"></span>
+      <span class="pre-ring pre-ring--c"></span>
+      <span class="pre-cross pre-cross--1"><i class="fa-solid fa-plus"></i></span>
+      <span class="pre-cross pre-cross--2"><i class="fa-solid fa-comment-dots"></i></span>
+      <span class="pre-cross pre-cross--3"><i class="fa-solid fa-plus"></i></span>
+      <span class="pre-cross pre-cross--4"><i class="fa-solid fa-comment-dots"></i></span>
+      <div class="pre-intro-mark"><img class="pre-intro-logo" src="../Images/logo-icon.webp" alt=""></div>
+    </div>
+    <div class="pre-name">
+      <span class="pre-letter">S</span><span class="pre-letter">T</span><span class="pre-letter">A</span><span class="pre-letter">C</span><span class="pre-letter">K</span><span class="pre-letter">L</span><span class="pre-letter">Y</span>
+    </div>
+    <div class="ecg" id="ecg" aria-hidden="true"></div>
+    <div class="pre-count"><span id="preCount">0</span><em>%</em></div>
+    <div class="pre-progress"><span id="preBar"></span></div>
+    <div class="pre-tag"><i class="fa-solid fa-phone-volume"></i> connecting your line</div>
+  </div>
+</div>
+
+<!-- ================= 01 · HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <a href="../index.html" class="brand">
+    <img class="brand-logo" src="../Images/logo-full.webp" alt="Stackly">
+    
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="service.html" class="nav-link">Services</a>
+    <a href="doctors.html" class="nav-link">Doctors</a>
+    <a href="contact.html" class="nav-link nav-active">Contact</a>
+  </nav>
+  <div class="header-cta">
+    <a href="login.html" class="btn btn-mini" data-magnetic><span>Login <i class="fa-solid fa-arrow-right-long"></i></span></a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- full-screen mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mm-top">
+    <a href="../index.html" class="brand brand--mobile">
+      <img class="brand-logo" src="../Images/logo-full.webp" alt="Stackly">
+      
+    </a>
+    <button class="mm-close" id="mmClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="mm-nav">
+    <a href="../index.html" class="mm-link" style="--i:1"><span>01</span>Home</a>
+    <a href="about.html" class="mm-link" style="--i:2"><span>02</span>About</a>
+    <a href="service.html" class="mm-link" style="--i:3"><span>03</span>Services</a>
+    <a href="doctors.html" class="mm-link" style="--i:4"><span>04</span>Doctors</a>
+    <a href="contact.html" class="mm-link mm-link--active" style="--i:5" aria-current="page"><span>05</span>Contact</a>
+  </nav>
+  <div class="mm-bottom">
+    <a href="login.html" class="mm-login" style="--i:6"><i class="fa-solid fa-user-plus"></i> Login to your health account</a>
+    <div class="mm-contact">
+      <span><i class="fa-solid fa-phone-volume"></i> +91 9745634567</span>
+      <span><i class="fa-solid fa-envelope"></i> info@stackly.com</span>
+    </div>
+    <div class="mm-social">
+      <a href="#!" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#!" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#!" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#!" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#!" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<main id="contact">
+
+<!-- ================= 02 · HERO — OPEN CHANNELS ================= -->
+<section class="cx-hero" id="top">
+  <span class="cx-glow cx-glow--a" aria-hidden="true"></span>
+  <span class="cx-glow cx-glow--b" aria-hidden="true"></span>
+  <span class="cx-grid-bg" aria-hidden="true"></span>
+
+  <div class="container cx-hero-grid">
+    <div class="cx-hero-copy">
+      <p class="cx-eyebrow"><i class="fa-solid fa-headset"></i> We answer, always · reply in ~15 min</p>
+      <h1 class="cx-title">
+        <span class="cx-line"><span class="cx-w">Have a question?</span></span>
+        <span class="cx-line cx-line--accent"><span class="cx-w">Let's get you</span></span>
+        <span class="cx-line"><span class="cx-w">to the right person<em class="cx-dot">.</em></span></span>
+      </h1>
+      <p class="cx-sub">No phone trees, no hold music, no "press 3". Pick a channel, tell us what you need, and a real member of the Stackly team takes it from there.</p>
+
+      <div class="cx-actions">
+        <a href="404.html" class="btn btn-fill" data-magnetic><span>Call +91 9745634567 <i class="fa-solid fa-phone-volume"></i></span></a>
+        <a href="404.html" class="btn btn-line" data-magnetic><span><i class="fa-solid fa-pen-to-square"></i> Write to us</span></a>
+      </div>
+
+      <ul class="cx-chips" aria-label="Ways to reach us">
+        <li class="cx-chip"><span><i class="fa-solid fa-phone"></i></span> Call</li>
+        <li class="cx-chip"><span><i class="fa-solid fa-envelope"></i></span> Email</li>
+        <li class="cx-chip"><span><i class="fa-solid fa-comments"></i></span> Live chat</li>
+        <li class="cx-chip"><span><i class="fa-solid fa-location-dot"></i></span> Visit</li>
+      </ul>
+    </div>
+
+    <div class="cx-console" id="cxConsole" aria-hidden="true">
+      <div class="cx-console-bar">
+        <span class="cx-dots"><i></i><i></i><i></i></span>
+        <span class="cx-url"><i class="fa-solid fa-lock"></i> stackly.com/contact</span>
+        <span class="cx-live"><i></i> online</span>
+      </div>
+      <div class="cx-console-body">
+        <figure class="cx-shot cx-shot--main"><img src="../Images/care-06.webp" alt="A Stackly care coordinator on the line"></figure>
+        <figure class="cx-shot cx-shot--pip"><img src="../Images/doctor-05.webp" alt="Stackly specialist"></figure>
+        <span class="cx-ring" aria-hidden="true"></span>
+        <span class="cx-ping" aria-hidden="true"></span>
+        <span class="cx-badge"><i class="fa-solid fa-bolt"></i> Avg reply · 15 min</span>
+        <span class="cx-msg cx-msg--a"><i class="fa-solid fa-heart"></i> How can we help today?</span>
+        <span class="cx-msg cx-msg--b"><i class="fa-solid fa-circle-check"></i> A human is typing…</span>
+      </div>
+      <div class="cx-console-foot">
+        <span><i class="fa-solid fa-phone-volume"></i><b>Call</b><em>24/7</em></span>
+        <span><i class="fa-solid fa-envelope"></i><b>Email</b><em>4h avg</em></span>
+        <span><i class="fa-solid fa-location-dot"></i><b>Visit</b><em>Open now</em></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cx-tape" aria-hidden="true">
+    <div class="cxt-track" data-mq="8">
+      <span>CALL US</span><i class="fa-solid fa-phone-volume"></i><span>EMAIL US</span><i class="fa-solid fa-envelope"></i><span>CHAT WITH US</span><i class="fa-solid fa-comments"></i><span>VISIT US</span><i class="fa-solid fa-location-dot"></i>
+      <span>CALL US</span><i class="fa-solid fa-phone-volume"></i><span>EMAIL US</span><i class="fa-solid fa-envelope"></i><span>CHAT WITH US</span><i class="fa-solid fa-comments"></i><span>VISIT US</span><i class="fa-solid fa-location-dot"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 · CHANNELS ================= -->
+<section class="cx-chan" id="channels">
+  <span class="cx-spot" id="cxSpot" aria-hidden="true"></span>
+  <div class="container">
+    <div class="sec-head sec-head--center cx-chan-head">
+      <span class="eyebrow"><i class="fa-solid fa-diagram-project"></i> Pick your channel</span>
+      <h2 class="sec-title">Four doors, <em>one team</em></h2>
+      <p class="cx-lead">Hover a door to open it — every route lands on the same people who'll actually solve it.</p>
+    </div>
+
+    <div class="cx-chan-row" id="cxChanRow">
+      <article class="cx-chan-card is-open" tabindex="0">
+        <figure class="cx-chan-bg"><img src="../Images/care-08.webp" alt="Stackly phone desk"></figure>
+        <span class="cx-chan-scrim" aria-hidden="true"></span>
+        <div class="cx-chan-inner">
+          <span class="cx-chan-ico"><i class="fa-solid fa-phone-volume"></i></span>
+          <span class="cx-chan-num">01</span>
+          <div class="cx-chan-body">
+            <h3>Call the desk</h3>
+            <p>Straight through to a coordinator — no menu, no queue. Emergency line answered around the clock.</p>
+            <a href="404.html" class="cx-chan-link">+91 9745634567 <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cx-chan-card" tabindex="0">
+        <figure class="cx-chan-bg"><img src="../Images/care-12.webp" alt="Stackly mail inbox"></figure>
+        <span class="cx-chan-scrim" aria-hidden="true"></span>
+        <div class="cx-chan-inner">
+          <span class="cx-chan-ico"><i class="fa-solid fa-envelope"></i></span>
+          <span class="cx-chan-num">02</span>
+          <div class="cx-chan-body">
+            <h3>Send an email</h3>
+            <p>Records, referrals and billing — attach what you have and we reply within four working hours.</p>
+            <a href="404.html" class="cx-chan-link">info@stackly.com <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cx-chan-card" tabindex="0">
+        <figure class="cx-chan-bg"><img src="../Images/care-17.webp" alt="Stackly live chat"></figure>
+        <span class="cx-chan-scrim" aria-hidden="true"></span>
+        <div class="cx-chan-inner">
+          <span class="cx-chan-ico"><i class="fa-solid fa-comments"></i></span>
+          <span class="cx-chan-num">03</span>
+          <div class="cx-chan-body">
+            <h3>Chat in app</h3>
+            <p>Secure messaging inside your Stackly account — share a photo, get a script, keep the whole thread.</p>
+            <a href="404.html" class="cx-chan-link">Open live chat <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cx-chan-card" tabindex="0">
+        <figure class="cx-chan-bg"><img src="../Images/care-28.webp" alt="Stackly front desk"></figure>
+        <span class="cx-chan-scrim" aria-hidden="true"></span>
+        <div class="cx-chan-inner">
+          <span class="cx-chan-ico"><i class="fa-solid fa-location-dot"></i></span>
+          <span class="cx-chan-num">04</span>
+          <div class="cx-chan-body">
+            <h3>Visit us</h3>
+            <p>Walk-ins welcome at the front desk, seven days a week. Free parking, step-free access throughout.</p>
+            <a href="404.html" class="cx-chan-link">Get directions <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 · QUICK HELP ================= -->
+<section class="cx-help" id="help">
+  <div class="cx-help-band">
+    <figure class="cx-help-bg"><img src="../Images/care-20.webp" alt="Stackly emergency team ready"></figure>
+    <span class="cx-help-scrim" aria-hidden="true"></span>
+    <span class="cx-help-scan" aria-hidden="true"></span>
+
+    <div class="container cx-help-grid">
+      <div class="cx-help-copy">
+        <span class="eyebrow eyebrow--dark"><i class="fa-solid fa-truck-medical"></i> When minutes matter</span>
+        <h2 class="sec-title sec-title--dark">Urgent? Skip the queue,<br><em>go straight through.</em></h2>
+        <p>For chest pain, trouble breathing, severe bleeding or any life-threatening emergency, call our 24/7 triage line. A clinician picks up — not a recording.</p>
+        <div class="cx-help-actions">
+          <a href="404.html" class="btn btn-amber" data-magnetic><span>SOS · Call triage now <i class="fa-solid fa-phone-volume"></i></span></a>
+          <a href="404.html" class="btn btn-line btn-line--light" data-magnetic><span><i class="fa-solid fa-location-crosshairs"></i> Nearest A&amp;E</span></a>
+        </div>
+      </div>
+
+      <aside class="cx-help-card">
+        <div class="cx-help-live">
+          <span class="cx-help-dot" aria-hidden="true"></span>
+          <span><b>Live now</b> · <span id="cxClock">00:00:00</span> local</span>
+        </div>
+        <ul class="cx-help-lines">
+          <li><span><i class="fa-solid fa-heart-pulse"></i></span><div><b>Cardiac fast lane</b><em>Door-to-balloon in 41 min</em></div><a href="404.html" aria-label="Call cardiac fast lane"><i class="fa-solid fa-arrow-right-long"></i></a></li>
+          <li><span><i class="fa-solid fa-baby"></i></span><div><b>Maternity &amp; NICU</b><em>Midwives on the floor 24/7</em></div><a href="404.html" aria-label="Call maternity"><i class="fa-solid fa-arrow-right-long"></i></a></li>
+          <li><span><i class="fa-solid fa-pills"></i></span><div><b>Poison &amp; overdose</b><em>Immediate toxicology advice</em></div><a href="404.html" aria-label="Call toxicology"><i class="fa-solid fa-arrow-right-long"></i></a></li>
+          <li><span><i class="fa-solid fa-user-shield"></i></span><div><b>Mental-health crisis</b><em>A calm voice, any hour</em></div><a href="404.html" aria-label="Call crisis line"><i class="fa-solid fa-arrow-right-long"></i></a></li>
+        </ul>
+        <p class="cx-help-note"><i class="fa-solid fa-circle-info"></i> Life-threatening? Call your local emergency number first.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 · FIND US ON THE MAP ================= -->
+<section class="cx-map" id="map">
+  <div class="container">
+    <div class="sec-head cx-map-head">
+      <div>
+        <span class="eyebrow"><i class="fa-solid fa-map-location-dot"></i> Find us</span>
+        <h2 class="sec-title">Right where you<br>need us to be</h2>
+      </div>
+      <div class="sec-head-side"><p>Central, step-free and easy to reach by bus, car or on foot.</p></div>
+    </div>
+
+    <div class="cx-map-wrap" id="cxMapWrap">
+      <div class="cx-map-frame">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.6829566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1791889420439!5m2!1sen!2sin"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin" title="Stackly location on Google Maps"></iframe>
+        <span class="cx-map-corner cx-map-corner--tl" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 06 · DESK FINDER ================= -->
+<section class="cx-desks" id="desks">
+  <div class="container">
+    <div class="sec-head cx-desks-head">
+      <div>
+        <span class="eyebrow"><i class="fa-solid fa-route"></i> Route me to the right desk</span>
+        <h2 class="sec-title">Who do you need<br>to <em>talk to?</em></h2>
+      </div>
+      <div class="sec-head-side"><p>Choose a topic — we'll show the team, the line and the hours.</p></div>
+    </div>
+
+    <div class="cx-desk-nav" id="cxDeskNav" role="tablist" aria-label="Choose a department">
+      <button class="cx-desk-tab is-on" data-desk="appointments" role="tab" aria-selected="true"><i class="fa-solid fa-calendar-check"></i> Appointments</button>
+      <button class="cx-desk-tab" data-desk="billing" role="tab" aria-selected="false"><i class="fa-solid fa-file-invoice-dollar"></i> Billing &amp; insurance</button>
+      <button class="cx-desk-tab" data-desk="records" role="tab" aria-selected="false"><i class="fa-solid fa-folder-medical"></i> Medical records</button>
+      <button class="cx-desk-tab" data-desk="feedback" role="tab" aria-selected="false"><i class="fa-solid fa-star"></i> Feedback</button>
+      <button class="cx-desk-tab" data-desk="careers" role="tab" aria-selected="false"><i class="fa-solid fa-briefcase"></i> Careers</button>
+    </div>
+
+    <div class="cx-desk-stage">
+      <div class="cx-desk-media" id="cxDeskMedia">
+        <figure class="cx-desk-photo is-on" data-desk="appointments"><img src="../Images/care-03.webp" alt="Appointments desk"></figure>
+        <figure class="cx-desk-photo" data-desk="billing"><img src="../Images/care-07.webp" alt="Billing and insurance desk"></figure>
+        <figure class="cx-desk-photo" data-desk="records"><img src="../Images/doctor-09.webp" alt="Medical records team"></figure>
+        <figure class="cx-desk-photo" data-desk="feedback"><img src="../Images/care-15.webp" alt="Patient experience team"></figure>
+        <figure class="cx-desk-photo" data-desk="careers"><img src="../Images/doctor-12.webp" alt="People and careers team"></figure>
+        <span class="cx-desk-tag" id="cxDeskTag"><i class="fa-solid fa-calendar-check"></i> Appointments</span>
+      </div>
+
+      <div class="cx-desk-panel">
+        <div class="cx-desk-view is-on" data-desk="appointments">
+          <h3>Appointments &amp; bookings</h3>
+          <p>New consults, reschedules and reminders — tell us the department and we'll find you a slot, often the same week.</p>
+          <ul class="cx-desk-feats">
+            <li><i class="fa-solid fa-circle-check"></i> Book, move or cancel in one call</li>
+            <li><i class="fa-solid fa-circle-check"></i> Interpreters available on request</li>
+          </ul>
+          <div class="cx-desk-meta">
+            <a href="404.html"><i class="fa-solid fa-phone-volume"></i> +91 9745634567</a>
+            <a href="404.html"><i class="fa-solid fa-envelope"></i> info@stackly.com</a>
+            <span><i class="fa-regular fa-clock"></i> Mon–Sat · 08:00–20:00</span>
+          </div>
+        </div>
+
+        <div class="cx-desk-view" data-desk="billing">
+          <h3>Billing &amp; insurance</h3>
+          <p>Quotes before you commit, itemised statements and direct claims with 40+ insurers — no surprise invoices.</p>
+          <ul class="cx-desk-feats">
+            <li><i class="fa-solid fa-circle-check"></i> Cashless claims with partner insurers</li>
+            <li><i class="fa-solid fa-circle-check"></i> Interest-free payment plans</li>
+          </ul>
+          <div class="cx-desk-meta">
+            <a href="404.html"><i class="fa-solid fa-phone-volume"></i> +91 9745634567</a>
+            <a href="404.html"><i class="fa-solid fa-envelope"></i> info@stackly.com</a>
+            <span><i class="fa-regular fa-clock"></i> Mon–Fri · 09:00–18:00</span>
+          </div>
+        </div>
+
+        <div class="cx-desk-view" data-desk="records">
+          <h3>Medical records</h3>
+          <p>Request a copy of your notes, scans or discharge summary — securely, and usually within two working days.</p>
+          <ul class="cx-desk-feats">
+            <li><i class="fa-solid fa-circle-check"></i> Digital copies to your patient portal</li>
+            <li><i class="fa-solid fa-circle-check"></i> Transfer records to another clinic</li>
+          </ul>
+          <div class="cx-desk-meta">
+            <a href="404.html"><i class="fa-solid fa-phone-volume"></i> +91 9745634567</a>
+            <a href="404.html"><i class="fa-solid fa-envelope"></i> info@stackly.com</a>
+            <span><i class="fa-regular fa-clock"></i> Mon–Fri · 08:30–17:30</span>
+          </div>
+        </div>
+
+        <div class="cx-desk-view" data-desk="feedback">
+          <h3>Feedback &amp; complaints</h3>
+          <p>Something we did well, or something we got wrong — it goes straight to the patient-experience lead, not a void.</p>
+          <ul class="cx-desk-feats">
+            <li><i class="fa-solid fa-circle-check"></i> Every complaint answered in 48 hours</li>
+            <li><i class="fa-solid fa-circle-check"></i> Outcomes shared back with you</li>
+          </ul>
+          <div class="cx-desk-meta">
+            <a href="404.html"><i class="fa-solid fa-phone-volume"></i> +91 9745634567</a>
+            <a href="404.html"><i class="fa-solid fa-envelope"></i> info@stackly.com</a>
+            <span><i class="fa-regular fa-clock"></i> Mon–Fri · 09:00–17:00</span>
+          </div>
+        </div>
+
+        <div class="cx-desk-view" data-desk="careers">
+          <h3>Careers &amp; people</h3>
+          <p>Clinicians, nurses and everything in between — 240 roles open across the campus and our community clinics.</p>
+          <ul class="cx-desk-feats">
+            <li><i class="fa-solid fa-circle-check"></i> Structured relocation support</li>
+            <li><i class="fa-solid fa-circle-check"></i> Reply to every application</li>
+          </ul>
+          <div class="cx-desk-meta">
+            <a href="404.html"><i class="fa-solid fa-phone-volume"></i> +91 9745634567</a>
+            <a href="404.html"><i class="fa-solid fa-envelope"></i> info@stackly.com</a>
+            <span><i class="fa-regular fa-clock"></i> Mon–Fri · 09:00–18:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 07 · DISPATCH (FORM) ================= -->
+<section class="cx-send" id="dispatch">
+  <div class="container cx-send-grid">
+    <div class="cx-send-rail" id="cxRail" aria-hidden="true">
+      <figure class="cx-rail-img is-on" data-field="cxName"><img src="../Images/care-36.webp" alt="A warm welcome"></figure>
+      <figure class="cx-rail-img" data-field="cxEmail"><img src="../Images/care-37.webp" alt="Secure messaging"></figure>
+      <figure class="cx-rail-img" data-field="cxPhone"><img src="../Images/doctor-12.webp" alt="A coordinator ready to help"></figure>
+      <figure class="cx-rail-img" data-field="cxTopic"><img src="../Images/care-10.webp" alt="Routing your message"></figure>
+      <figure class="cx-rail-img" data-field="cxMsg"><img src="../Images/care-02.webp" alt="A considered reply"></figure>
+      <span class="cx-rail-cap" id="cxRailCap">Tell us who you are</span>
+    </div>
+
+    <div class="cx-send-formwrap">
+      <span class="eyebrow"><i class="fa-solid fa-paper-plane"></i> Send a message</span>
+      <h2 class="sec-title">Write to us — a <em>person</em><br>reads every one</h2>
+      <p class="cx-send-lead">Fill it in and we'll route it to the right desk. Expect a reply from a named human, not a template.</p>
+
+      <form class="cx-form" id="cxForm" novalidate>
+        <div class="cx-field" data-field="cxName">
+          <label class="cx-lbl" for="cxName"><i class="fa-regular fa-user"></i> Your name</label>
+          <span class="cx-box">
+            <input type="text" id="cxName" name="name" placeholder="e.g. Maya Collins" autocomplete="name" required>
+          </span>
+          <p class="cx-err" id="errCxName" hidden></p>
+        </div>
+        <div class="cx-field" data-field="cxEmail">
+          <label class="cx-lbl" for="cxEmail"><i class="fa-regular fa-envelope"></i> Email address</label>
+          <span class="cx-box">
+            <input type="email" id="cxEmail" name="email" placeholder="you@email.com" autocomplete="email" required>
+          </span>
+          <p class="cx-err" id="errCxEmail" hidden></p>
+        </div>
+        <div class="cx-field" data-field="cxPhone">
+          <label class="cx-lbl" for="cxPhone"><i class="fa-solid fa-phone"></i> Phone <small>(optional)</small></label>
+          <span class="cx-box">
+            <input type="tel" id="cxPhone" name="phone" placeholder="+1 234 567 890" autocomplete="tel">
+          </span>
+          <p class="cx-err" id="errCxPhone" hidden></p>
+        </div>
+        <div class="cx-field cx-field--select" data-field="cxTopic">
+          <label class="cx-lbl" for="cxTopic"><i class="fa-solid fa-tag"></i> What's it about?</label>
+          <span class="cx-box">
+            <select id="cxTopic" name="topic" required>
+              <option value="" disabled selected hidden>Choose a topic…</option>
+              <option value="general">General enquiry</option>
+              <option value="appointment">Appointments</option>
+              <option value="billing">Billing &amp; insurance</option>
+              <option value="records">Medical records</option>
+              <option value="feedback">Feedback</option>
+              <option value="careers">Careers</option>
+            </select>
+            <i class="fa-solid fa-chevron-down cx-caret" aria-hidden="true"></i>
+          </span>
+          <p class="cx-err" id="errCxTopic" hidden></p>
+        </div>
+        <div class="cx-field cx-field--full" data-field="cxMsg">
+          <label class="cx-lbl" for="cxMsg"><i class="fa-regular fa-comment-dots"></i> Your message</label>
+          <span class="cx-box">
+            <textarea id="cxMsg" name="message" placeholder="Tell us a little about what you need…" rows="4" required></textarea>
+          </span>
+          <p class="cx-err" id="errCxMsg" hidden></p>
+        </div>
+
+        <label class="cx-consent">
+          <input type="checkbox" id="cxConsent">
+          <span><i class="fa-solid fa-check"></i></span>
+          I agree to be contacted about my enquiry.
+        </label>
+        <p class="cx-err cx-err--consent" id="errCxConsent" hidden></p>
+
+        <div class="cx-form-foot">
+          <button type="submit" class="btn btn-fill cx-submit" data-magnetic><span>Send message <i class="fa-solid fa-paper-plane"></i></span></button>
+          <p class="cx-form-note" id="cxFormNote"><i class="fa-solid fa-lock"></i> Encrypted · never shared</p>
+        </div>
+        <p class="cx-form-ok" id="cxFormOk" hidden><i class="fa-solid fa-circle-check"></i> Got it — your message is on its way. We'll reply to <span id="cxOkMail">you</span> shortly.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 08 · HOURS & COVERAGE ================= -->
+<section class="cx-hours" id="hours">
+  <div class="container cx-hours-grid">
+    <div class="cx-hours-ringwrap">
+      <span class="eyebrow"><i class="fa-regular fa-clock"></i> Around the clock</span>
+      <h2 class="sec-title">Somebody's always<br><em>on the line</em></h2>
+
+      <div class="cx-clock" id="cxClock2" role="img" aria-label="Coverage around the clock">
+        <span class="cx-clock-face" aria-hidden="true"></span>
+        <span class="cx-clock-hand" id="cxHand" aria-hidden="true"></span>
+        <span class="cx-clock-hub"><i class="fa-solid fa-phone-volume"></i></span>
+        <div class="cx-clock-ticks" id="cxTicks"></div>
+      </div>
+      <p class="cx-clock-caption">Hover the dial to see who's awake at that hour.</p>
+    </div>
+
+    <div class="cx-hours-side">
+      <article class="cx-hours-info" id="cxHoursInfo">
+        <span class="cx-hours-time"><i class="fa-regular fa-clock"></i> <b id="cxHourLabel">08:00</b></span>
+        <h3 id="cxHourTitle">Outpatient clinics</h3>
+        <p id="cxHourText">Doors open for appointments, walk-in triage and diagnostics. Most clinics run straight through until 20:00.</p>
+        <span class="cx-hours-badge" id="cxHourBadge"><i class="fa-solid fa-sun"></i> Day team on site</span>
+      </article>
+
+      <div class="cx-hours-cards">
+        <figure class="cx-hours-card">
+          <img src="../Images/care-27.webp" alt="Stackly campus at dusk">
+          <figcaption><span>18:00 · handover</span><b>Day team briefs the night</b></figcaption>
+        </figure>
+        <figure class="cx-hours-card">
+          <img src="../Images/care-33.webp" alt="Quiet night corridors">
+          <figcaption><span>02:00 · night shift</span><b>A calm, fully-lit campus</b></figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 09 · OFFICES ================= -->
+<section class="cx-offices" id="offices">
+  <div class="container">
+    <div class="sec-head sec-head--center cx-offices-head">
+      <span class="eyebrow"><i class="fa-solid fa-city"></i> Our locations</span>
+      <h2 class="sec-title">Three front doors, <em>same care</em></h2>
+      <p class="cx-lead">Flip a card to see the address, hours and the direct line to each site.</p>
+    </div>
+
+    <div class="cx-office-grid">
+      <div class="cx-office" tabindex="0">
+        <div class="cx-office-in">
+          <figure class="cx-office-front">
+            <img src="../Images/care-30.webp" alt="Stackly central campus">
+            <figcaption><span class="cx-office-pin"><i class="fa-solid fa-location-dot"></i> Main campus</span><b>Salem Central</b><em>Flag · Outpatient &amp; emergency</em></figcaption>
+            <span class="cx-office-flip"><i class="fa-solid fa-rotate"></i> Flip</span>
+          </figure>
+          <div class="cx-office-back">
+            <h3>Salem Central</h3>
+            <p>MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil,<br>Salem, Tamil Nadu 636008</p>
+            <ul>
+              <li><i class="fa-solid fa-phone-volume"></i> +91 9745634567</li>
+              <li><i class="fa-regular fa-clock"></i> Emergency · 24 hours</li>
+              <li><i class="fa-solid fa-car"></i> 400 free parking bays</li>
+            </ul>
+            <a href="404.html">Show on map <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cx-office" tabindex="0">
+        <div class="cx-office-in">
+          <figure class="cx-office-front">
+            <img src="../Images/care-14.webp" alt="Stackly family clinic">
+            <figcaption><span class="cx-office-pin"><i class="fa-solid fa-location-dot"></i> Family clinic</span><b>Fairlands</b><em>Kids, maternity &amp; diagnostics</em></figcaption>
+            <span class="cx-office-flip"><i class="fa-solid fa-rotate"></i> Flip</span>
+          </figure>
+          <div class="cx-office-back">
+            <h3>Fairlands Family Clinic</h3>
+            <p>MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil,<br>Salem, Tamil Nadu 636008</p>
+            <ul>
+              <li><i class="fa-solid fa-phone-volume"></i> +91 9745634567</li>
+              <li><i class="fa-regular fa-clock"></i> Mon–Sat · 08:00–20:00</li>
+              <li><i class="fa-solid fa-bus"></i> 3 min from Central bus stop</li>
+            </ul>
+            <a href="404.html">Show on map <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cx-office" tabindex="0">
+        <div class="cx-office-in">
+          <figure class="cx-office-front">
+            <img src="../Images/care-19.webp" alt="Stackly community hub">
+            <figcaption><span class="cx-office-pin"><i class="fa-solid fa-location-dot"></i> Community hub</span><b>Riverside</b><em>Rehab, therapy &amp; outreach</em></figcaption>
+            <span class="cx-office-flip"><i class="fa-solid fa-rotate"></i> Flip</span>
+          </figure>
+          <div class="cx-office-back">
+            <h3>Riverside Community Hub</h3>
+            <p>MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil,<br>Salem, Tamil Nadu 636008</p>
+            <ul>
+              <li><i class="fa-solid fa-phone-volume"></i> +91 9745634567</li>
+              <li><i class="fa-regular fa-clock"></i> Mon–Fri · 09:00–19:00</li>
+              <li><i class="fa-solid fa-wheelchair-move"></i> Step-free throughout</li>
+            </ul>
+            <a href="404.html">Show on map <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 10 · VISIT PREP ================= -->
+<section class="cx-visit" id="visit">
+  <div class="container cx-visit-grid">
+    <div class="cx-visit-copy">
+      <span class="eyebrow"><i class="fa-solid fa-suitcase-medical"></i> Before you arrive</span>
+      <h2 class="sec-title">A little prep,<br>a <em>gentler</em> visit</h2>
+      <p>Bring these and your appointment runs smoother — and if it's your first time, we'll walk you in from the door.</p>
+      <ul class="cx-visit-list">
+        <li><span><i class="fa-solid fa-id-card"></i></span><div><b>Photo ID &amp; insurance card</b><p>One government ID and your policy number if you have one.</p></div></li>
+        <li><span><i class="fa-solid fa-notes-medical"></i></span><div><b>Your medication list</b><p>Names and doses of anything you're taking, including over-the-counter.</p></div></li>
+        <li><span><i class="fa-solid fa-file-waveform"></i></span><div><b>Earlier reports or scans</b><p>Not essential — we'll request them — but they help the first consult.</p></div></li>
+        <li><span><i class="fa-solid fa-user-clock"></i></span><div><b>15 minutes early</b><p>Enough time to park, register and settle in without the rush.</p></div></li>
+      </ul>
+      <a href="404.html" class="btn btn-fill" data-magnetic><span>Questions? Ask ahead <i class="fa-solid fa-arrow-right-long"></i></span></a>
+    </div>
+
+    <div class="cx-visit-collage" id="cxCollage">
+      <figure class="cx-col cx-col--a" data-depth="18"><img src="../Images/care-04.webp" alt="Reception welcome"></figure>
+      <figure class="cx-col cx-col--b" data-depth="34"><img src="../Images/doctor-03.webp" alt="A specialist greeting a patient"></figure>
+      <figure class="cx-col cx-col--c" data-depth="26"><img src="../Images/care-21.webp" alt="Consultation room"></figure>
+      <figure class="cx-col cx-col--d" data-depth="44"><img src="../Images/care-01.webp" alt="Care team huddle"></figure>
+      <span class="cx-col-badge"><i class="fa-solid fa-people-arrows"></i> Guided first visits</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 11 · FINAL CTA ================= -->
+<section class="cx-talk" id="talk">
+  <div class="cx-talk-banner">
+    <figure class="cx-talk-bg"><img src="../Images/care-09.webp" alt="The Stackly care team at work"></figure>
+    <span class="cx-talk-scrim" aria-hidden="true"></span>
+
+    <div class="cx-talk-copy">
+      <p class="cx-talk-eyebrow"><i class="fa-solid fa-comment-medical"></i> Let's talk</p>
+      <h2 class="cx-talk-title">One message away,<br><em>every single day.</em></h2>
+      <p class="cx-talk-lead">Whatever it is — a question, a worry, a compliment — someone who can actually help is ready to pick it up.</p>
+      <div class="cx-talk-actions">
+        <a href="404.html" class="btn btn-amber" data-magnetic><span>Send a message <i class="fa-solid fa-paper-plane"></i></span></a>
+        <a href="404.html" class="btn btn-line btn-line--light" data-magnetic><span><i class="fa-solid fa-phone-volume"></i> Call the desk</span></a>
+      </div>
+      <div class="cx-talk-mini">
+        <span class="cx-talk-avas"><img src="../Images/doctor-05.webp" alt="Coordinator"><img src="../Images/doctor-11.webp" alt="Coordinator"><img src="../Images/doctor-13.webp" alt="Coordinator"><img src="../Images/care-13.webp" alt="Coordinator"></span>
+        <p><span class="cx-talk-dot" aria-hidden="true"></span> <b>6 people online now</b> · average reply 15 minutes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= 12 · FOOTER ================= -->
+<footer class="footer" id="footer">
+  <div class="container footer-grid">
+    <div class="foot-brand">
+      <a href="../index.html" class="brand brand--foot">
+        <img class="brand-logo" src="../Images/logo-full.webp" alt="Stackly">
+        
+      </a>
+      <p>Stackly is the healthcare management system built around you — uniting 240+
+        specialists, smart diagnostics and human warmth under one roof.</p>
+      <div class="foot-social">
+        <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="foot-col">
+      <h4>Quick Links</h4>
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="foot-col">
+      <h4>Departments</h4>
+      <a href="404.html">Cardiology</a>
+      <a href="404.html">Neurology</a>
+      <a href="404.html">Maternity &amp; NICU</a>
+      <a href="404.html">Precision labs</a>
+      <a href="404.html">Emergency 24/7</a>
+    </div>
+
+    <div class="foot-col foot-contact">
+      <h4>Get in touch</h4>
+      <a href="404.html"><i class="fa-solid fa-envelope"></i> info@stackly.com</a>
+      <a href="404.html"><i class="fa-solid fa-phone-volume"></i> +91 9745634567</a>
+      <a href="404.html"><i class="fa-solid fa-location-dot"></i> MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil,<br>Salem, Tamil Nadu 636008</a>
+    </div>
+
+    <div class="foot-col foot-news">
+      <h4>Newsletter</h4>
+      <p>One gentle email a month — health tips, offers and zero spam.</p>
+      <form class="news-form" id="newsForm" novalidate>
+        <div class="nf-row">
+          <input type="email" id="newsEmail" placeholder="Your email address" aria-label="Newsletter email">
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <p class="nf-err" id="newsErr" hidden><i class="fa-solid fa-circle-exclamation"></i> Please enter a valid email address.</p>
+        <p class="nf-ok" id="newsOk" hidden><i class="fa-solid fa-circle-check"></i> You're on the list — welcome to Stackly!</p>
+      </form>
+    </div>
+  </div>
+
+  <div class="foot-marquee" aria-hidden="true">
+    <div class="fm-track" data-mq="2">
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Stackly All Rights Reserved</p>
+      <div class="foot-legal">
+        <a href="404.html">Terms &amp; Conditions</a>
+        <a href="404.html">Privacy Policy</a>
+        <a href="404.html">Cookie Settings</a>
+      </div>
+      <p class="foot-made">Crafted with <i class="fa-solid fa-heart"></i> for healthier days</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up-long"></i></button>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="../JS/contact.js"></script>
+</body>
+</html>

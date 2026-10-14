@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-dash-role="doctor">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Doctor Dashboard — Stackly · Healthcare Management</title>
+<meta name="description" content="Your Stackly doctor desk: schedule, patient list, prescriptions and team messages." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" type="image/webp" href="../Images/logo-icon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300..800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="stylesheet" href="../CSS/dashboard.css" />
+<script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+<style id="dash-boot">
+  html, body { margin: 0; background: #081719; color: #F6F1E7; }
+</style>
+</head>
+<body>
+
+<div class="boot" id="dashBoot">
+  <div class="boot__inner">
+    <img class="boot__logo" src="../Images/logo-icon.webp" alt="" aria-hidden="true">
+    <span class="boot__ring" aria-hidden="true"></span>
+    <span class="boot__note">Loading your desk</span>
+  </div>
+</div>
+
+<div class="scrim" id="dashScrim"></div>
+
+<div class="dash">
+
+  <aside class="dash-side" id="dashSide" aria-label="Primary">
+    <div class="side-brand">
+      <a href="doctor.html" aria-label="Reload doctor dashboard">
+        <img class="side-logo" src="../Images/logo-full.webp" alt="Stackly">
+      </a>
+      <button type="button" class="side-close" id="sideClose" aria-label="Close menu">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <p class="side-role" id="sideRole">Doctor account</p>
+
+    <nav class="side-nav"><ul id="dashNav"></ul></nav>
+
+    <div class="side-user">
+      <span class="side-user__avatar" id="sideAvatar">D</span>
+      <div>
+        <strong id="sideUserName">Doctor</strong>
+        <span id="sideUserRole">Doctor</span>
+      </div>
+    </div>
+
+    <div class="side-out">
+      <button type="button" id="logoutBtn">
+        <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
+        <span>Log out</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="dash-main">
+
+    <header class="dash-head">
+      <div class="head-lead">
+        <button type="button" class="head-burger" id="sideToggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="head-title">
+          <h2 id="headTitle">Overview</h2>
+          <p id="headSub">Doctor desk</p>
+        </div>
+      </div>
+
+      <div class="head-search">
+        <label class="head-search__box" id="searchBox">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <input id="searchInput" type="search" placeholder="Search patients, appointments, scripts" aria-label="Search your desk" />
+        </label>
+      </div>
+
+      <div class="head-right">
+        <a href="404.html" class="head-bell" aria-label="Notifications">
+          <i class="fa-solid fa-bell" aria-hidden="true"></i>
+        </a>
+        <div class="head-user">
+          <span class="head-user__avatar" id="headAvatar">D</span>
+          <div>
+            <strong id="headUserName">Doctor</strong>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="dash-body" id="dashBody"></main>
+
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite" aria-atomic="true"></div>
+
+<script src="../JS/dashboard.js"></script>
+</body>
+</html>

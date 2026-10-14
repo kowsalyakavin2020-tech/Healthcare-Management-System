@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Sign In — Stackly · Healthcare Management</title>
+<meta name="description" content="Sign in to Stackly. Patient and Doctor accounts open different dashboards for your care." />
+<meta name="robots" content="noindex, follow" />
+<link rel="icon" type="image/webp" href="../Images/logo-icon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300..800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="stylesheet" href="../CSS/auth.css" />
+<script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+<style id="au-boot">
+  html, body { margin: 0; background: #081719; color: #F6F1E7; overflow-x: clip; }
+</style>
+</head>
+<body>
+
+<main class="auth-shell" id="authShell">
+
+  <section class="auth-media">
+    <img class="auth-media__shot" src="../Images/hero-doctor.webp" alt="" fetchpriority="high" />
+    <span class="auth-media__veil"></span>
+    <span class="auth-media__grid" aria-hidden="true"></span>
+
+    <a href="../index.html" class="auth-home">
+      <i class="fa-solid fa-house" aria-hidden="true"></i>
+      <span class="auth-home-label">Back to Home</span>
+    </a>
+
+    <div class="ac-chip ac-chip--a">
+      <i class="fa-solid fa-truck-medical" aria-hidden="true"></i>
+      <span>24/7 emergency care</span>
+    </div>
+    <div class="ac-chip ac-chip--b">
+      <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+      <span>240+ board-certified specialists</span>
+    </div>
+    <div class="ac-chip ac-chip--c">
+      <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+      <span>Your records, always private</span>
+    </div>
+
+    <div class="auth-media__quote">
+      <p class="ac-quote">One account, two doors — <em>care</em> on one side, <em>clinic</em> on the other.</p>
+      <p class="ac-quote-sub">Sign in to book a visit or run your patient list.</p>
+    </div>
+  </section>
+
+  <section class="auth-form">
+
+    <a href="../index.html" class="auth-logo" aria-label="Stackly home">
+      <img class="auth-logo-img" src="../Images/logo-full.webp" alt="Stackly">
+    </a>
+
+    <header class="auth-head">
+      <p class="auth-kicker">Welcome back</p>
+      <h1 class="auth-title">Sign in to <em>Stackly</em></h1>
+      <p class="auth-sub">Your care is one tap away — pick a role to continue.</p>
+    </header>
+
+    <form class="auth-frm" id="loginForm" novalidate autocomplete="off">
+
+      <div class="fld" data-field="email">
+        <label for="loginEmail">Email address</label>
+        <div class="fld-ctl">
+          <i class="fa-solid fa-envelope fld-ico" aria-hidden="true"></i>
+          <input id="loginEmail" name="email" type="email" placeholder="you@example.com" autocomplete="off" aria-invalid="false" aria-describedby="loginEmailErr" />
+        </div>
+        <p class="fld-err" id="loginEmailErr" data-err></p>
+      </div>
+
+      <div class="fld" data-field="password">
+        <label for="loginPassword">Password</label>
+        <div class="fld-ctl">
+          <i class="fa-solid fa-lock fld-ico" aria-hidden="true"></i>
+          <input id="loginPassword" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" aria-invalid="false" aria-describedby="loginPasswordErr" />
+          <button type="button" class="fld-eye" data-eye aria-label="Show password">
+            <i class="fa-solid fa-eye" aria-hidden="true"></i>
+          </button>
+        </div>
+        <p class="fld-err" id="loginPasswordErr" data-err></p>
+      </div>
+
+      <div class="fld" data-field="role">
+        <label for="loginRole">Role</label>
+        <div class="fld-ctl">
+          <i class="fa-solid fa-id-badge fld-ico" aria-hidden="true"></i>
+          <select id="loginRole" name="role" aria-invalid="false" aria-describedby="loginRoleErr">
+            <option value="">Select your role</option>
+            <option value="patient">Patient — book visits, reports and prescriptions</option>
+            <option value="doctor">Doctor — manage patients, rounds and notes</option>
+          </select>
+          <i class="fa-solid fa-chevron-down fld-caret" aria-hidden="true"></i>
+        </div>
+        <p class="fld-err" id="loginRoleErr" data-err></p>
+      </div>
+
+      <div class="fld-row">
+        <label class="fld-check">
+          <input type="checkbox" id="loginRemember" name="remember" />
+          <span class="fld-checkbox" aria-hidden="true"><i class="fa-solid fa-check"></i></span>
+          <span class="fld-check-label">Remember my email</span>
+        </label>
+        <a href="404.html" class="fld-link" data-forgot>Forgot password?</a>
+      </div>
+
+      <button type="submit" class="abtn abtn--solid">
+        <i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i>
+        <span class="btn-label">Login</span>
+      </button>
+
+      <div class="alt-divider"><span>or</span></div>
+
+      <button type="button" class="abtn abtn--ghost" data-social>
+        <i class="fa-brands fa-google" aria-hidden="true"></i>
+        <span class="btn-label">Continue with Google</span>
+      </button>
+
+    </form>
+
+    <p class="auth-switch">
+      No account yet? <a href="signin.html">Create one</a>
+    </p>
+
+  </section>
+
+</main>
+
+<div class="auth-toast" id="authToast" role="status" aria-live="polite"></div>
+
+<script src="../JS/auth.js"></script>
+</body>
+</html>

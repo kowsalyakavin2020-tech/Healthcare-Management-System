@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stackly — Healthcare Management</title>
+<meta name="description" content="Stackly Healthcare Management — premium, animated landing theme for hospitals, clinics and care networks.">
+<link rel="icon" type="image/webp" href="Images/logo-icon.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300..800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="stylesheet" href="CSS/Home.css">
+</head>
+
+<body>
+
+<!-- ================= PRELOADER (unchanged) ================= -->
+<div id="preloader">
+  <div class="pre-grid" aria-hidden="true"></div>
+  <div class="pre-center">
+    <div class="pre-orbit">
+      <div class="pre-intro-mark">
+        <img class="pre-intro-logo" src="Images/logo-icon.webp" alt="">
+        <span class="pre-pulse"></span>
+      </div>
+      <div class="pre-ring pre-ring--a"></div>
+      <div class="pre-ring pre-ring--b"></div>
+      <div class="pre-ring pre-ring--c"></div>
+      <i class="fa-solid fa-plus pre-cross pre-cross--1"></i>
+      <i class="fa-solid fa-plus pre-cross pre-cross--2"></i>
+      <i class="fa-solid fa-plus pre-cross pre-cross--3"></i>
+      <i class="fa-solid fa-plus pre-cross pre-cross--4"></i>
+    </div>
+    <div class="pre-name" aria-hidden="true">
+      <span class="pre-letter">S</span><span class="pre-letter">t</span><span class="pre-letter">a</span><span class="pre-letter">c</span><span class="pre-letter">k</span><span class="pre-letter">l</span><span class="pre-letter">y</span>
+    </div>
+    <div class="ecg" id="ecg" aria-hidden="true"></div>
+    <div class="pre-count"><span id="preCount">0</span><em>%</em></div>
+    <div class="pre-progress"><span id="preBar"></span></div>
+    <p class="pre-tag"><i class="fa-solid fa-hands-holding-heart"></i> Preparing your care experience</p>
+  </div>
+</div>
+
+<!-- ================= 01 · HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <a href="#home" class="brand">
+    <img class="brand-logo" src="Images/logo-full.webp" alt="Stackly">
+    
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#home" class="nav-link nav-active">Home</a>
+    <a href="HTML/about.html" class="nav-link">About</a>
+    <a href="HTML/service.html" class="nav-link">Services</a>
+    <a href="HTML/doctors.html" class="nav-link">Doctors</a>
+    <a href="HTML/contact.html" class="nav-link">Contact</a>
+  </nav>
+  <div class="header-cta">
+    <a href="HTML/login.html" class="btn btn-mini" data-magnetic><span>Login <i class="fa-solid fa-arrow-right-long"></i></span></a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- full-screen mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mm-top">
+    <a href="#home" class="brand brand--mobile">
+      <img class="brand-logo" src="Images/logo-full.webp" alt="Stackly">
+      
+    </a>
+    <button class="mm-close" id="mmClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="mm-nav">
+    <a href="#home" class="mm-link mm-link--active" style="--i:1" aria-current="page"><span>01</span>Home</a>
+    <a href="HTML/about.html" class="mm-link" style="--i:2"><span>02</span>About</a>
+    <a href="HTML/service.html" class="mm-link" style="--i:3"><span>03</span>Services</a>
+    <a href="HTML/doctors.html" class="mm-link" style="--i:4"><span>04</span>Doctors</a>
+    <a href="HTML/contact.html" class="mm-link" style="--i:5"><span>05</span>Contact</a>
+  </nav>
+  <div class="mm-bottom">
+    <a href="HTML/login.html" class="mm-login" style="--i:6"><i class="fa-solid fa-user-plus"></i> Login to your health account</a>
+    <div class="mm-contact">
+      <span><i class="fa-solid fa-phone-volume"></i> +91 9745634567</span>
+      <span><i class="fa-solid fa-envelope"></i> info@stackly.com</span>
+    </div>
+    <div class="mm-social">
+      <a href="#!" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#!" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#!" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#!" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#!" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<main id="home">
+
+<!-- ================= 02 · HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow hero-eyebrow">
+        <i class="fa-solid fa-heart-pulse"></i> Your health, our heartbeat
+      </span>
+      <h1 class="hero-title">
+        <span class="line"><span class="word">Healthcare</span> <span class="word">that</span></span>
+        <span class="line line--accent"><span class="word">feels</span> <em class="word word--em">human.</em></span>
+      </h1>
+      <p class="hero-sub">
+        Stackly unites 240+ specialists, smart diagnostics and round-the-clock care
+        into one calm, human system — so your recovery never waits.
+      </p>
+      <div class="hero-actions">
+        <a href="HTML/404.html" class="btn btn-fill" data-magnetic><span>Book appointment <i class="fa-solid fa-arrow-right-long"></i></span></a>
+        <a href="HTML/404.html" class="btn btn-line" data-magnetic><span><i class="fa-solid fa-circle-play"></i> Why Stackly</span></a>
+      </div>
+      <div class="hero-proof">
+        <div class="av-stack">
+          <img src="Images/doctor-02.webp" alt="Patient">
+          <img src="Images/doctor-03.webp" alt="Patient">
+          <img src="Images/doctor-06.webp" alt="Patient">
+          <img src="Images/doctor-13.webp" alt="Patient">
+          <span class="av-more">+12k</span>
+        </div>
+        <div class="proof-text">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p><strong>4.9/5</strong> rated by 12,000+ patients</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-media" id="heroMedia">
+      <span class="hero-frame" aria-hidden="true"></span>
+      <figure class="hero-photo">
+        <img id="heroImg" src="Images/hero-doctor.webp" alt="Stackly leading physician">
+      </figure>
+      <span class="hero-tag hero-tag--top"><i class="fa-solid fa-user-doctor"></i> Board-certified <em>240+</em></span>
+    </div>
+  </div>
+
+  <div class="hero-marquee" id="heroMarquee">
+    <div class="mq-track" data-mq="18">
+      <span>Cardiology</span><i class="fa-solid fa-crosshairs"></i>
+      <span>Pediatrics</span><i class="fa-solid fa-hand-holding-medical"></i>
+      <span>Neurology</span><i class="fa-solid fa-brain"></i>
+      <span>Orthopedics</span><i class="fa-solid fa-bone"></i>
+      <span>Diagnostics</span><i class="fa-solid fa-microscope"></i>
+      <span>Maternity</span><i class="fa-solid fa-baby"></i>
+      <span>Dermatology</span><i class="fa-solid fa-hand-dots"></i>
+      <span>Radiology</span><i class="fa-solid fa-wave-square"></i>
+      <span>Emergency 24/7</span><i class="fa-solid fa-truck-medical"></i>
+      <span>Cardiology</span><i class="fa-solid fa-crosshairs"></i>
+      <span>Pediatrics</span><i class="fa-solid fa-hand-holding-medical"></i>
+      <span>Neurology</span><i class="fa-solid fa-brain"></i>
+      <span>Orthopedics</span><i class="fa-solid fa-bone"></i>
+      <span>Diagnostics</span><i class="fa-solid fa-microscope"></i>
+      <span>Maternity</span><i class="fa-solid fa-baby"></i>
+      <span>Dermatology</span><i class="fa-solid fa-hand-dots"></i>
+      <span>Radiology</span><i class="fa-solid fa-wave-square"></i>
+      <span>Emergency 24/7</span><i class="fa-solid fa-truck-medical"></i>
+      <span>Cardiology</span><i class="fa-solid fa-crosshairs"></i>
+      <span>Pediatrics</span><i class="fa-solid fa-hand-holding-medical"></i>
+      <span>Neurology</span><i class="fa-solid fa-brain"></i>
+      <span>Orthopedics</span><i class="fa-solid fa-bone"></i>
+      <span>Diagnostics</span><i class="fa-solid fa-microscope"></i>
+      <span>Maternity</span><i class="fa-solid fa-baby"></i>
+      <span>Dermatology</span><i class="fa-solid fa-hand-dots"></i>
+      <span>Radiology</span><i class="fa-solid fa-wave-square"></i>
+      <span>Emergency 24/7</span><i class="fa-solid fa-truck-medical"></i>
+      <span>Cardiology</span><i class="fa-solid fa-crosshairs"></i>
+      <span>Pediatrics</span><i class="fa-solid fa-hand-holding-medical"></i>
+      <span>Neurology</span><i class="fa-solid fa-brain"></i>
+      <span>Orthopedics</span><i class="fa-solid fa-bone"></i>
+      <span>Diagnostics</span><i class="fa-solid fa-microscope"></i>
+      <span>Maternity</span><i class="fa-solid fa-baby"></i>
+      <span>Dermatology</span><i class="fa-solid fa-hand-dots"></i>
+      <span>Radiology</span><i class="fa-solid fa-wave-square"></i>
+      <span>Emergency 24/7</span><i class="fa-solid fa-truck-medical"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 · STATS ================= -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-topline">
+      <span class="eyebrow"><i class="fa-solid fa-chart-pulse"></i> Stackly in numbers</span>
+      <p>Measured outcomes, told plainly.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat" data-count="25">
+        <span class="stat-ico"><i class="fa-solid fa-award"></i></span>
+        <strong><span class="num">0</span><sub>+</sub></strong>
+        <p>Years of trusted care</p>
+      </div>
+      <div class="stat" data-count="240">
+        <span class="stat-ico"><i class="fa-solid fa-user-doctor"></i></span>
+        <strong><span class="num">0</span><sub>+</sub></strong>
+        <p>Expert specialist doctors</p>
+      </div>
+      <div class="stat" data-count="50">
+        <span class="stat-ico"><i class="fa-solid fa-notes-medical"></i></span>
+        <strong><span class="num">0</span><sub>K+</sub></strong>
+        <p>Patients treated every year</p>
+      </div>
+      <div class="stat" data-count="30">
+        <span class="stat-ico"><i class="fa-solid fa-hospital"></i></span>
+        <strong><span class="num">0</span><sub>+</sub></strong>
+        <p>Advanced departments</p>
+      </div>
+    </div>
+    <div class="trust-marquee">
+      <div class="tm-track" data-mq="8">
+        <i>MediCore</i><i>WellSpring</i><i>Nova Clinic</i><i>CarePoint</i><i>LifeBridge</i><i>PulseMed</i><i>Sanitas</i><i>BlueKite</i>
+        <i>MediCore</i><i>WellSpring</i><i>Nova Clinic</i><i>CarePoint</i><i>LifeBridge</i><i>PulseMed</i><i>Sanitas</i><i>BlueKite</i>
+        <i>MediCore</i><i>WellSpring</i><i>Nova Clinic</i><i>CarePoint</i><i>LifeBridge</i><i>PulseMed</i><i>Sanitas</i><i>BlueKite</i>
+        <i>MediCore</i><i>WellSpring</i><i>Nova Clinic</i><i>CarePoint</i><i>LifeBridge</i><i>PulseMed</i><i>Sanitas</i><i>BlueKite</i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 · ABOUT / WHY STACKLY ================= -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-intro">
+      <span class="eyebrow" data-aos="fade-up">Why Stackly</span>
+      <h2 class="sec-title" data-aos="fade-up">A hospital that doesn't<br><em>feel like one.</em></h2>
+      <p class="sec-lead" data-aos="fade-up">We rebuilt healthcare around you — warm rooms,
+        honest communication and medicine that meets you where you are.</p>
+      <div class="about-chiprow" data-aos="fade-up">
+        <div class="ac"><i class="fa-solid fa-circle-check"></i><span>ISO 9001 certified</span></div>
+        <div class="ac"><i class="fa-solid fa-circle-check"></i><span>NABH accredited</span></div>
+      </div>
+      <a href="HTML/404.html" class="btn btn-fill" data-aos="fade-up" data-magnetic><span>Start a conversation <i class="fa-solid fa-arrow-right-long"></i></span></a>
+    </div>
+
+    <div class="about-visual" data-aos="fade-up">
+      <figure class="about-thumb about-thumb--big">
+        <img src="Images/care-01.webp" alt="Inside a Stackly facility">
+        <figcaption><i class="fa-solid fa-shield-heart"></i> Purpose-built care wings</figcaption>
+      </figure>
+      <figure class="about-thumb about-thumb--small">
+        <img src="Images/care-13.webp" alt="Smart diagnostics lab">
+        <figcaption><i class="fa-solid fa-microscope"></i> Precision diagnostics</figcaption>
+      </figure>
+      <div class="about-flag"><i class="fa-solid fa-trophy"></i> <strong>18</strong> national awards</div>
+    </div>
+
+    <div class="about-ledger">
+      <a class="ledger" href="HTML/404.html" data-aos="fade-up">
+        <span class="ledger-num">01</span>
+        <span class="ledger-ico"><i class="fa-solid fa-microscope"></i></span>
+        <div class="ledger-txt">
+          <strong>Smart diagnostics</strong>
+          <p>AI-assisted labs and imaging return results in minutes, not days.</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square ledger-arrow"></i>
+      </a>
+      <a class="ledger" href="HTML/404.html" data-aos="fade-up" data-aos-delay="90">
+        <span class="ledger-num">02</span>
+        <span class="ledger-ico"><i class="fa-solid fa-clock"></i></span>
+        <div class="ledger-txt">
+          <strong>24/7 emergency care</strong>
+          <p>Rapid-response teams on standby, every hour of the day.</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square ledger-arrow"></i>
+      </a>
+      <a class="ledger" href="HTML/404.html" data-aos="fade-up" data-aos-delay="180">
+        <span class="ledger-num">03</span>
+        <span class="ledger-ico"><i class="fa-solid fa-comments"></i></span>
+        <div class="ledger-txt">
+          <strong>A team that speaks human</strong>
+          <p>Doctors who explain, listen and stay by your side.</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square ledger-arrow"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 · SERVICES (horizontal scroll) ================= -->
+<section class="services" id="services">
+  <div class="svc-head container">
+    <div>
+      <span class="eyebrow" data-aos="fade-up">Our services</span>
+      <h2 class="sec-title" data-aos="fade-up">Care built around<br><em>every body</em></h2>
+    </div>
+    <div class="svc-hint" data-aos="fade-up">
+      <span>Keep scrolling</span>
+      <i class="fa-solid fa-arrow-right-long"></i>
+    </div>
+  </div>
+
+  <div class="svc-scroll" id="svcScroll">
+    <div class="svc-track" id="svcTrack">
+      <article class="svc" data-aos="fade-up">
+        <div class="svc-media"><img src="Images/care-12.webp" alt="Surgical excellence"><span class="svc-imgtag">Robotic theatres</span></div>
+        <div class="svc-body">
+          <span class="svc-num">01</span>
+          <span class="svc-ico"><i class="fa-solid fa-bed-pulse"></i></span>
+          <h3>Surgical excellence</h3>
+          <p>AI-assisted theatres with a 98.7% success rate and shorter stays.</p>
+          <a href="HTML/404.html" class="svc-link">Reserve <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </article>
+
+      <article class="svc" data-aos="fade-up">
+        <div class="svc-media"><img src="Images/care-02.webp" alt="Cardiac care"><span class="svc-imgtag">Heart unit</span></div>
+        <div class="svc-body">
+          <span class="svc-num">02</span>
+          <span class="svc-ico"><i class="fa-solid fa-heart-circle-check"></i></span>
+          <h3>Cardiac care</h3>
+          <p>Full-spectrum heart care, from imaging to post-op recovery.</p>
+          <a href="HTML/404.html" class="svc-link">Check routes <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </article>
+
+      <article class="svc" data-aos="fade-up">
+        <div class="svc-media"><img src="Images/care-06.webp" alt="Neurology"><span class="svc-imgtag">Neuro wing</span></div>
+        <div class="svc-body">
+          <span class="svc-num">03</span>
+          <span class="svc-ico"><i class="fa-solid fa-brain"></i></span>
+          <h3>Neurology</h3>
+          <p>Cognitive rehab and nerve care guided by certified specialists.</p>
+          <a href="HTML/404.html" class="svc-link">See programs <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </article>
+
+      <article class="svc" data-aos="fade-up">
+        <div class="svc-media"><img src="Images/care-08.webp" alt="Mother and child"><span class="svc-imgtag">Maternity</span></div>
+        <div class="svc-body">
+          <span class="svc-num">04</span>
+          <span class="svc-ico"><i class="fa-solid fa-baby"></i></span>
+          <h3>Mother &amp; child</h3>
+          <p>Gentle maternity wings and NICU care for your smallest heroes.</p>
+          <a href="HTML/404.html" class="svc-link">Book a tour <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </article>
+
+      <article class="svc" data-aos="fade-up">
+        <div class="svc-media"><img src="Images/care-05.webp" alt="Community health"><span class="svc-imgtag">Outreach</span></div>
+        <div class="svc-body">
+          <span class="svc-num">05</span>
+          <span class="svc-ico"><i class="fa-solid fa-hand-holding-heart"></i></span>
+          <h3>Community health</h3>
+          <p>Free camps and home visits that bring care to your doorstep.</p>
+          <a href="HTML/404.html" class="svc-link">Donate a camp <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </article>
+
+      <article class="svc" data-aos="fade-up">
+        <div class="svc-media"><img src="Images/care-07.webp" alt="Precision labs"><span class="svc-imgtag">Laboratory</span></div>
+        <div class="svc-body">
+          <span class="svc-num">06</span>
+          <span class="svc-ico"><i class="fa-solid fa-dna"></i></span>
+          <h3>Precision labs</h3>
+          <p>450+ tests with same-day reports and genomic screening.</p>
+          <a href="HTML/404.html" class="svc-link">View packages <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </article>
+
+      <article class="svc svc--cta" data-aos="fade-up">
+        <span class="svc-bigmark"><i class="fa-solid fa-heart-pulse"></i></span>
+        <h3>Not sure where<br>to begin?</h3>
+        <p>Tell us your symptoms — our triage desk will route you in minutes.</p>
+        <a href="HTML/404.html" class="btn btn-amber" data-magnetic><span>Ask Stackly <i class="fa-solid fa-arrow-right-long"></i></span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 06 · FIELD SPOTLIGHT ================= -->
+<section class="spotlight" id="spotlight">
+  <div class="container spotlight-grid">
+    <div class="spot-copy">
+      <span class="eyebrow" data-aos="fade-up">Field spotlight</span>
+      <h2 class="sec-title" data-aos="fade-up">“I don't treat charts —<br><em>I treat people.”</em></h2>
+      <p class="sec-lead" data-aos="fade-up">Meet the teams who make Stackly feel like family medicine
+        at the scale of a world-class hospital.</p>
+      <div class="spot-stats" data-aos="fade-up">
+        <div><strong>2,300+</strong><p>Surgeries led</p></div>
+        <div><strong>24 yrs</strong><p>At the table</p></div>
+        <div><strong>100%</strong><p>Stay with us post-op</p></div>
+      </div>
+      <div class="spot-cta" data-aos="fade-up">
+        <a href="HTML/404.html" class="btn btn-fill" data-magnetic><span>Meet our specialists <i class="fa-solid fa-arrow-right-long"></i></span></a>
+        <div class="spot-sig">— Dr. Ade Faseyi, Chief of Surgery</div>
+      </div>
+    </div>
+
+    <div class="spot-visual" id="spotVisual">
+      <figure class="spot-photo">
+        <img id="spotImg" src="Images/doctor-10.webp" alt="Dr. Ade Faseyi, Chief of Surgery">
+      </figure>
+      <div class="spot-plaque">
+        <i class="fa-solid fa-stethoscope"></i>
+        <div><strong>Dr. Ade Faseyi</strong><p>Chief of Surgery · Harvard Fellowship</p></div>
+      </div>
+      <span class="spot-chip-rot"><i class="fa-solid fa-award"></i> Top-1% surgeon rating</span>
+    </div>
+  </div>
+  <div class="spot-strip">
+    <div class="ss-track" data-mq="10">
+      <span>Compassion</span><i class="fa-solid fa-cross"></i><span>Precision</span><i class="fa-solid fa-cross"></i><span>Innovation</span><i class="fa-solid fa-cross"></i><span>Humanity</span><i class="fa-solid fa-cross"></i><span>Care</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>Compassion</span><i class="fa-solid fa-cross"></i><span>Precision</span><i class="fa-solid fa-cross"></i><span>Innovation</span><i class="fa-solid fa-cross"></i><span>Humanity</span><i class="fa-solid fa-cross"></i><span>Care</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>Compassion</span><i class="fa-solid fa-cross"></i><span>Precision</span><i class="fa-solid fa-cross"></i><span>Innovation</span><i class="fa-solid fa-cross"></i><span>Humanity</span><i class="fa-solid fa-cross"></i><span>Care</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>Compassion</span><i class="fa-solid fa-cross"></i><span>Precision</span><i class="fa-solid fa-cross"></i><span>Innovation</span><i class="fa-solid fa-cross"></i><span>Humanity</span><i class="fa-solid fa-cross"></i><span>Care</span><i class="fa-solid fa-heart-pulse"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 07 · EFFORTLESS BY DESIGN ================= -->
+<section class="process" id="process">
+  <div class="care-path" id="carePath">
+    <div class="container">
+      <div class="sec-head sec-head--center">
+        <span class="eyebrow" data-aos="fade-up">Effortless by design</span>
+        <h2 class="sec-title" data-aos="fade-up">Symptom to recovery in<br><em>three calm steps</em></h2>
+      </div>
+
+      <div class="cp-conveyor" aria-hidden="true">
+        <span class="cp-conveyor-fill" id="cpConveyor"></span>
+      </div>
+
+      <div class="cp-grid">
+        <article class="cp-card">
+          <div class="cp-top">
+            <span class="cp-ico"><i class="fa-solid fa-calendar-check"></i></span>
+            <span class="cp-chip"><i class="fa-solid fa-bolt"></i> 2-min booking</span>
+          </div>
+          <h3>Book your visit</h3>
+          <p>Pick a department, compare doctors and reserve a slot in under two minutes.</p>
+          <ul class="cp-list">
+            <li><i class="fa-solid fa-circle-check"></i> Instant slot confirmation</li>
+            <li><i class="fa-solid fa-circle-check"></i> Choose your own doctor</li>
+          </ul>
+          <a href="HTML/404.html" class="step-link">Book now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </article>
+
+        <article class="cp-card cp-card--mid">
+          <div class="cp-top">
+            <span class="cp-ico"><i class="fa-solid fa-notes-medical"></i></span>
+            <span class="cp-chip"><i class="fa-solid fa-vial"></i> 40+ tests, same day</span>
+          </div>
+          <h3>Consult &amp; diagnose</h3>
+          <p>Meet your specialist, run smart tests and get a clear, jargon-free plan instantly.</p>
+          <ul class="cp-list">
+            <li><i class="fa-solid fa-circle-check"></i> Same-day lab results</li>
+            <li><i class="fa-solid fa-circle-check"></i> Video follow-ups included</li>
+          </ul>
+          <a href="HTML/404.html" class="step-link">Chat with a doctor <i class="fa-solid fa-arrow-right-long"></i></a>
+        </article>
+
+        <article class="cp-card">
+          <div class="cp-top">
+            <span class="cp-ico"><i class="fa-solid fa-shield-heart"></i></span>
+            <span class="cp-chip"><i class="fa-solid fa-headset"></i> 24/7 helpline</span>
+          </div>
+          <h3>Recover &amp; thrive</h3>
+          <p>Track recovery in the app with reminders, reports and a 24/7 helpline.</p>
+          <ul class="cp-list">
+            <li><i class="fa-solid fa-circle-check"></i> Recovery plan in-app</li>
+            <li><i class="fa-solid fa-circle-check"></i> Weekly progress reports</li>
+          </ul>
+          <a href="HTML/404.html" class="step-link">Start today <i class="fa-solid fa-arrow-right-long"></i></a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 08 · WALL OF HEART ================= -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow" data-aos="fade-up">Wall of heart</span>
+      <h2 class="sec-title" data-aos="fade-up">Stories our patients<br><em>carry home</em></h2>
+    </div>
+
+    <div class="tst-grid">
+      <article class="tst-hero" id="tstHero">
+        <span class="tst-hero-quote"><i class="fa-solid fa-quote-left"></i></span>
+        <p class="tst-hero-txt" id="tstHeroTxt">Stackly caught what three other hospitals missed. The way
+          Dr. Yorke sat with us and explained every step — that kind of care is why my whole family now walks
+          in through these doors.</p>
+        <div class="tst-hero-who" id="tstHeroWho">
+          <img id="tstHeroImg" src="Images/care-34.webp" alt="Marcus Rivera">
+          <div><strong id="tstHeroName">Marcus Rivera</strong><p id="tstHeroRole">Cardiac patient · Treated 2026</p></div>
+        </div>
+      </article>
+
+      <div class="tst-side">
+        <button class="tst-mini is-on" data-txt="Stackly caught what three other hospitals missed. The way Dr. Yorke sat with us and explained every step — that kind of care is why my whole family now walks in through these doors."
+          data-name="Marcus Rivera" data-role="Cardiac patient · Treated 2026" data-img="care-34.webp">
+          <span class="tm-num">1</span><p>“That kind of care is why my whole family now walks in through these doors.”</p>
+          <div class="tm-ava"><img src="Images/care-34.webp" alt="Marcus Rivera"><strong>Marcus Rivera</strong></div>
+        </button>
+        <button class="tst-mini" data-txt="Our little Lily arrived eight weeks early, and the NICU team became our second family. They cheered with us on every single gram. Stackly is magic with a heartbeat."
+          data-name="Leila Haddad" data-role="NICU mom · Birth 2026" data-img="care-36.webp">
+          <span class="tm-num">2</span><p>“The NICU team became our second family and cheered on every single gram.”</p>
+          <div class="tm-ava"><img src="Images/care-36.webp" alt="Leila Haddad"><strong>Leila Haddad</strong></div>
+        </button>
+        <button class="tst-mini" data-txt="Six months after knee surgery I run 10K again. The physio app, the check-ins, the honest feedback — Stackly simply does healthcare differently."
+          data-name="Owen Calkins" data-role="Ortho patient · Runner" data-img="care-35.webp">
+          <span class="tm-num">3</span><p>“Six months after knee surgery I run 10K again thanks to Stackly.”</p>
+          <div class="tm-ava"><img src="Images/care-35.webp" alt="Owen Calkins"><strong>Owen Calkins</strong></div>
+        </button>
+        <button class="tst-mini" data-txt="Blood reports that used to take a week now land before I reach home. And a doctor actually called me to explain them."
+          data-name="Dana Whit" data-role="Diagnostics member" data-img="care-37.webp">
+          <span class="tm-num">4</span><p>“Reports land before I reach home — and a doctor called to explain them.”</p>
+          <div class="tm-ava"><img src="Images/care-37.webp" alt="Dana Whit"><strong>Dana Whit</strong></div>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 09 · TEAM ================= -->
+<section class="team" id="doctors">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow" data-aos="fade-up">The people of Stackly</span>
+      <h2 class="sec-title" data-aos="fade-up">Doctors who<br><em>know your name</em></h2>
+      <div class="sec-head-side" data-aos="fade-up">
+        <p>Board-certified, empathy-checked and always on call for you.</p>
+        <a href="#contact" class="link-arrow">All specialists <i class="fa-solid fa-arrow-right-long"></i></a>
+      </div>
+    </div>
+
+    <div class="doc-fan">
+      <article class="doc" data-aos="fade-up" data-aos-delay="0">
+        <div class="doc-img">
+          <img src="Images/doctor-05.webp" alt="Dr. Alana Yorke">
+          <span class="doc-ribbon"><i class="fa-solid fa-heart-pulse"></i></span>
+          <div class="doc-social">
+            <a href="HTML/404.html" aria-label="Schedule"><i class="fa-solid fa-calendar-plus"></i></a>
+            <a href="HTML/404.html" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+            <a href="HTML/404.html" aria-label="Message"><i class="fa-solid fa-comment-medical"></i></a>
+          </div>
+        </div>
+        <div class="doc-info">
+          <span>Cardiology</span>
+          <h3>Dr. Alana Yorke</h3>
+          <p>MBBS · MD</p>
+        </div>
+      </article>
+
+      <article class="doc" data-aos="fade-up" data-aos-delay="80">
+        <div class="doc-img">
+          <img src="Images/doctor-11.webp" alt="Dr. Omar Kent">
+          <span class="doc-ribbon"><i class="fa-solid fa-brain"></i></span>
+          <div class="doc-social">
+            <a href="HTML/404.html" aria-label="Schedule"><i class="fa-solid fa-calendar-plus"></i></a>
+            <a href="HTML/404.html" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+            <a href="HTML/404.html" aria-label="Message"><i class="fa-solid fa-comment-medical"></i></a>
+          </div>
+        </div>
+        <div class="doc-info">
+          <span>Neurology</span>
+          <h3>Dr. Omar Kent</h3>
+          <p>DM · FRCP</p>
+        </div>
+      </article>
+
+      <article class="doc" data-aos="fade-up" data-aos-delay="160">
+        <div class="doc-img">
+          <img src="Images/doctor-13.webp" alt="Dr. Ines Duarte">
+          <span class="doc-ribbon"><i class="fa-solid fa-baby"></i></span>
+          <div class="doc-social">
+            <a href="HTML/404.html" aria-label="Schedule"><i class="fa-solid fa-calendar-plus"></i></a>
+            <a href="HTML/404.html" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+            <a href="HTML/404.html" aria-label="Message"><i class="fa-solid fa-comment-medical"></i></a>
+          </div>
+        </div>
+        <div class="doc-info">
+          <span>Pediatrics</span>
+          <h3>Dr. Ines Duarte</h3>
+          <p>MD · DCH</p>
+        </div>
+      </article>
+
+      <article class="doc" data-aos="fade-up" data-aos-delay="240">
+        <div class="doc-img">
+          <img src="Images/doctor-15.webp" alt="Dr. Elias Frost">
+          <span class="doc-ribbon"><i class="fa-solid fa-bone"></i></span>
+          <div class="doc-social">
+            <a href="HTML/404.html" aria-label="Schedule"><i class="fa-solid fa-calendar-plus"></i></a>
+            <a href="HTML/404.html" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+            <a href="HTML/404.html" aria-label="Message"><i class="fa-solid fa-comment-medical"></i></a>
+          </div>
+        </div>
+        <div class="doc-info">
+          <span>Orthopedics</span>
+          <h3>Dr. Elias Frost</h3>
+          <p>MS · FACS</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 10 · PRICING ================= -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="sec-head sec-head--center">
+      <span class="eyebrow" data-aos="fade-up">Membership plans</span>
+      <h2 class="sec-title" data-aos="fade-up">Care plans that<br><em>breathe easy</em></h2>
+      <div class="bill-toggle" data-aos="fade-up">
+        <span id="billMonth" class="is-on">Monthly</span>
+        <button class="toggle-track" id="billToggle" aria-label="Toggle billing"><span class="toggle-knob"></span></button>
+        <span id="billYear">Yearly <b class="save">-20%</b></span>
+      </div>
+    </div>
+
+    <div class="plan-rows">
+      <article class="plan" data-aos="fade-up">
+        <div class="plan-head">
+          <span class="plan-tag">Essentials</span>
+          <h3>Family Care</h3>
+          <div class="plan-price"><span class="cur">$</span><span class="amt" data-month="29" data-year="23">29</span><span class="per">/month</span></div>
+        </div>
+        <div class="plan-features">
+          <span><i class="fa-solid fa-circle-check"></i> 4 GP visits / month</span>
+          <span><i class="fa-solid fa-circle-check"></i> Pharmacy discount 10%</span>
+          <span><i class="fa-solid fa-circle-check"></i> Online prescriptions</span>
+        </div>
+        <a href="HTML/404.html" class="btn btn-line" data-magnetic><span>Choose Family Care <i class="fa-solid fa-arrow-right-long"></i></span></a>
+      </article>
+
+      <article class="plan plan--lead" data-aos="fade-up" data-aos-delay="90">
+        <span class="plan-flag"><i class="fa-solid fa-crown"></i> Most loved</span>
+        <div class="plan-head">
+          <span class="plan-tag">Complete</span>
+          <h3>Total Care</h3>
+          <div class="plan-price"><span class="cur">$</span><span class="amt" data-month="59" data-year="47">59</span><span class="per">/month</span></div>
+        </div>
+        <div class="plan-features">
+          <span><i class="fa-solid fa-circle-check"></i> Unlimited GP visits</span>
+          <span><i class="fa-solid fa-circle-check"></i> All specialists included</span>
+          <span><i class="fa-solid fa-circle-check"></i> Priority ER access</span>
+          <span><i class="fa-solid fa-circle-check"></i> 24/7 tele-care line</span>
+        </div>
+        <a href="HTML/404.html" class="btn btn-fill" data-magnetic><span>Choose Total Care <i class="fa-solid fa-arrow-right-long"></i></span></a>
+      </article>
+
+      <article class="plan" data-aos="fade-up" data-aos-delay="180">
+        <div class="plan-head">
+          <span class="plan-tag">Extended</span>
+          <h3>Senior Care</h3>
+          <div class="plan-price"><span class="cur">$</span><span class="amt" data-month="79" data-year="63">79</span><span class="per">/month</span></div>
+        </div>
+        <div class="plan-features">
+          <span><i class="fa-solid fa-circle-check"></i> Everything in Total Care</span>
+          <span><i class="fa-solid fa-circle-check"></i> Monthly home visits</span>
+          <span><i class="fa-solid fa-circle-check"></i> Medication delivery</span>
+        </div>
+        <a href="HTML/404.html" class="btn btn-line" data-magnetic><span>Choose Senior Care <i class="fa-solid fa-arrow-right-long"></i></span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 11 · STACKLY JOURNAL ================= -->
+<section class="insights" id="insights">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow" data-aos="fade-up">Stackly journal</span>
+      <h2 class="sec-title" data-aos="fade-up">Health notes,<br><em>plainly spoken</em></h2>
+      <div class="sec-head-side" data-aos="fade-up">
+        <p>Fresh guidance from our doctors — no jargon, just what helps.</p>
+        <a href="HTML/404.html" class="link-arrow">Visit the journal <i class="fa-solid fa-arrow-right-long"></i></a>
+      </div>
+    </div>
+
+    <div class="post-row">
+      <article class="post" data-aos="fade-up" data-aos-delay="0">
+        <a class="post-img" href="HTML/404.html">
+          <img src="Images/care-02.webp" alt="Sleep and recovery">
+          <span class="post-cat">Recovery</span>
+          <span class="post-curtain"></span>
+          <i class="fa-solid fa-arrow-up-right-from-square post-go"></i>
+        </a>
+        <div class="post-body">
+          <div class="post-meta"><span><i class="fa-regular fa-calendar"></i> Mar 12, 2026</span><span><i class="fa-regular fa-clock"></i> 6 min</span></div>
+          <h3>Why sleep is the quietest medicine your body knows</h3>
+          <p>Five nightly habits that cut inflammation by a third.</p>
+        </div>
+      </article>
+
+      <article class="post" data-aos="fade-up" data-aos-delay="120">
+        <a class="post-img" href="HTML/404.html">
+          <img src="Images/care-06.webp" alt="Heart health">
+          <span class="post-cat">Cardiology</span>
+          <span class="post-curtain"></span>
+          <i class="fa-solid fa-arrow-up-right-from-square post-go"></i>
+        </a>
+        <div class="post-body">
+          <div class="post-meta"><span><i class="fa-regular fa-calendar"></i> Feb 28, 2026</span><span><i class="fa-regular fa-clock"></i> 8 min</span></div>
+          <h3>A 6-minute walk test that predicts heart risk</h3>
+          <p>Simple, free and shockingly accurate. Try it before your next checkup.</p>
+        </div>
+      </article>
+
+      <article class="post" data-aos="fade-up" data-aos-delay="240">
+        <a class="post-img" href="HTML/404.html">
+          <img src="Images/care-07.webp" alt="Oral health">
+          <span class="post-cat">Dental</span>
+          <span class="post-curtain"></span>
+          <i class="fa-solid fa-arrow-up-right-from-square post-go"></i>
+        </a>
+        <div class="post-body">
+          <div class="post-meta"><span><i class="fa-regular fa-calendar"></i> Feb 09, 2026</span><span><i class="fa-regular fa-clock"></i> 5 min</span></div>
+          <h3>The surprising link between your gums and your brain</h3>
+          <p>New research from our dental wing — the three habits that protect both.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 12 · BOOK AN APPOINTMENT ================= -->
+<section class="appoint" id="contact">
+  <div class="container">
+    <div class="appoint-panel">
+      <div class="appoint-info">
+        <span class="eyebrow app-eyebrow" data-aos="fade-up">Book an appointment</span>
+        <h2 class="sec-title ap-title" data-aos="fade-up">Let's schedule<br>your <em>comeback</em></h2>
+        <p class="ap-lead" data-aos="fade-up">Our care desk replies within 15 minutes — day or night.</p>
+        <figure class="ap-pic" data-aos="zoom-in-up">
+          <img src="Images/care-05.webp" alt="The Stackly care team">
+        </figure>
+        <div class="ap-blocks" data-aos="fade-up">
+          <a href="HTML/404.html" class="ap-block"><i class="fa-solid fa-phone-volume"></i>
+            <span><small>24/7 Emergency</small><strong>+91 9745634567</strong></span></a>
+          <a href="HTML/404.html" class="ap-block"><i class="fa-solid fa-envelope-open-text"></i>
+            <span><small>Email the desk</small><strong>info@stackly.com</strong></span></a>
+        </div>
+      </div>
+
+      <div class="appoint-form" data-aos="fade-up" data-aos-delay="120">
+        <form id="appointmentForm" novalidate>
+          <div class="af-grid">
+            <label class="af">
+              <span>Full name</span>
+              <span class="af-box">
+                <input type="text" id="apName" placeholder="e.g. Maya Collins">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              <em class="af-msg"></em>
+            </label>
+            <label class="af">
+              <span>Email address</span>
+              <span class="af-box">
+                <input type="email" id="apEmail" placeholder="you@email.com">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <em class="af-msg"></em>
+            </label>
+            <label class="af">
+              <span>Phone</span>
+              <span class="af-box">
+                <input type="tel" id="apPhone" placeholder="+1 234 567 890">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <em class="af-msg"></em>
+            </label>
+            <label class="af">
+              <span>Date of birth</span>
+              <span class="af-box">
+                <input type="date" id="apDate" min="1900-01-01">
+              </span>
+              <em class="af-msg"></em>
+            </label>
+            <label class="af af--full">
+              <span>Department</span>
+              <span class="af-box">
+                <select id="apDept">
+                  <option value="">Choose a department…</option>
+                  <option>Cardiology</option>
+                  <option>Neurology</option>
+                  <option>Orthopedics</option>
+                  <option>Pediatrics</option>
+                  <option>Maternity</option>
+                  <option>Diagnostics &amp; Labs</option>
+                  <option>Dermatology</option>
+                </select>
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+              <em class="af-msg"></em>
+            </label>
+            <label class="af af--full">
+              <span>Message <small>(optional)</small></span>
+              <span class="af-box af-box--area">
+                <textarea id="apMsg" rows="3" placeholder="Tell us a little about what you need…"></textarea>
+                <i class="fa-solid fa-comment-medical"></i>
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-fill btn-big"><span>Request my appointment <i class="fa-solid fa-paper-plane"></i></span></button>
+          <p class="af-disclaimer"><i class="fa-solid fa-lock"></i> We respect your privacy. No spam, no sharing — ever.</p>
+        </form>
+        <div class="af-success" id="apSuccess" hidden>
+          <i class="fa-solid fa-circle-check"></i>
+          <h3>Request received — cheers!</h3>
+          <p>Our care desk will ring you within 15 minutes to confirm your slot.</p>
+          <button class="btn btn-fill" id="apAgain"><span>Make another request</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 13 · GOOD TO KNOW ================= -->
+<section class="faq" id="faq">
+  <div class="container faq-grid">
+    <div class="faq-panel" data-aos="fade-up">
+      <span class="eyebrow faq-eyebrow" >Good to know</span>
+      <h2 class="sec-title faq-title">Questions we<br><em>love to answer</em></h2>
+      <p class="faq-lead">Still curious? Our care desk is one call away — no question is too small.</p>
+      <div class="faq-iconwall">
+        <span><i class="fa-solid fa-clipboard-check"></i></span>
+        <span><i class="fa-solid fa-stethoscope"></i></span>
+        <span><i class="fa-solid fa-file-medical"></i></span>
+        <span><i class="fa-solid fa-shield-heart"></i></span>
+        <span><i class="fa-solid fa-truck-medical"></i></span>
+        <span><i class="fa-solid fa-syringe"></i></span>
+      </div>
+      <a href="HTML/404.html" class="btn btn-amber" data-magnetic><span><i class="fa-solid fa-comment-sms"></i> Ask us directly</span></a>
+      <p class="faq-stat"><i class="fa-solid fa-users"></i> 19.4k people helped this month</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item" data-aos="fade-up">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q-num">01</span>
+          <h3>Do I need insurance to visit Stackly?</h3>
+          <span class="faq-ico"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-a"><p>Not at all. We accept direct payment, all major insurers and flexible instalment
+          plans. The care desk can pre-validate your coverage before your first visit.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="60">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q-num">02</span>
+          <h3>How quickly can I get an appointment?</h3>
+          <span class="faq-ico"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-a"><p>Most GP slots open within 4 hours, and specialist referrals usually land within 48
+          hours. Emergency care is available around the clock with zero queue online.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="120">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q-num">03</span>
+          <h3>Can my reports be shared with another hospital?</h3>
+          <span class="faq-ico"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-a"><p>Yes — every report is yours. Export clean PDFs or share a secure link from the Stackly
+          app, instantly transferable to any provider worldwide.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="180">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q-num">04</span>
+          <h3>Does the app actually help me recover?</h3>
+          <span class="faq-ico"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-a"><p>Recovery tracking, medication nudges, physio videos and direct chat with your care team —
+          94% of members hit their targets a full week earlier on average.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= 14 · FOOTER ================= -->
+<footer class="footer" id="footer">
+  <div class="container footer-grid">
+    <div class="foot-brand">
+      <a href="#home" class="brand brand--foot">
+        <img class="brand-logo" src="Images/logo-full.webp" alt="Stackly">
+        
+      </a>
+      <p>Stackly is the healthcare management system built around you — uniting 240+
+        specialists, smart diagnostics and human warmth under one roof.</p>
+      <div class="foot-social">
+        <a href="HTML/404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="HTML/404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="HTML/404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="HTML/404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="HTML/404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="foot-col">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="HTML/about.html">About</a>
+      <a href="HTML/service.html">Services</a>
+      <a href="HTML/doctors.html">Doctors</a>
+      <a href="HTML/contact.html">Contact</a>
+    </div>
+
+    <div class="foot-col">
+      <h4>Departments</h4>
+      <a href="HTML/404.html">Cardiology</a>
+      <a href="HTML/404.html">Neurology</a>
+      <a href="HTML/404.html">Maternity &amp; NICU</a>
+      <a href="HTML/404.html">Precision labs</a>
+      <a href="HTML/404.html">Emergency 24/7</a>
+    </div>
+
+    <div class="foot-col foot-contact">
+      <h4>Get in touch</h4>
+      <a href="HTML/404.html"><i class="fa-solid fa-envelope"></i> info@stackly.com</a>
+      <a href="HTML/404.html"><i class="fa-solid fa-phone-volume"></i> +91 9745634567</a>
+      <a href="HTML/404.html"><i class="fa-solid fa-location-dot"></i> MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil,<br>Salem, Tamil Nadu 636008</a>
+    </div>
+
+    <div class="foot-col foot-news">
+      <h4>Newsletter</h4>
+      <p>One gentle email a month — health tips, offers and zero spam.</p>
+      <form class="news-form" id="newsForm" novalidate>
+        <div class="nf-row">
+          <input type="email" id="newsEmail" placeholder="Your email address" aria-label="Newsletter email">
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <p class="nf-err" id="newsErr" hidden><i class="fa-solid fa-circle-exclamation"></i> Please enter a valid email address.</p>
+        <p class="nf-ok" id="newsOk" hidden><i class="fa-solid fa-circle-check"></i> You're on the list — welcome to Stackly!</p>
+      </form>
+    </div>
+  </div>
+
+  <div class="foot-marquee" aria-hidden="true">
+    <div class="fm-track" data-mq="2">
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Stackly All Rights Reserved</p>
+      <div class="foot-legal">
+        <a href="HTML/404.html">Terms &amp; Conditions</a>
+        <a href="HTML/404.html">Privacy Policy</a>
+        <a href="HTML/404.html">Cookie Settings</a>
+      </div>
+      <p class="foot-made">Crafted with <i class="fa-solid fa-heart"></i> for healthier days</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up-long"></i></button>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="JS/Home.js"></script>
+</body>
+</html>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Stackly — The people behind the pulse</title>
+  <meta name="description" content="Stackly is the healthcare management system built around you. Meet the people, mission, leadership and milestones behind the pulse.">
+  <link rel="icon" type="image/webp" href="../Images/logo-icon.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/about.css">
+</head>
+<body>
+
+<!-- ================= PRELOADER ================= -->
+<div id="preloader">
+  <div class="pre-grid"></div>
+  <div class="pre-center">
+    <div class="pre-orbit">
+      <span class="pre-pulse"></span>
+      <span class="pre-ring pre-ring--a"></span>
+      <span class="pre-ring pre-ring--b"></span>
+      <span class="pre-ring pre-ring--c"></span>
+      <span class="pre-cross pre-cross--1"><i class="fa-solid fa-plus"></i></span>
+      <span class="pre-cross pre-cross--2"><i class="fa-solid fa-star-of-life"></i></span>
+      <span class="pre-cross pre-cross--3"><i class="fa-solid fa-plus"></i></span>
+      <span class="pre-cross pre-cross--4"><i class="fa-solid fa-star-of-life"></i></span>
+      <div class="pre-intro-mark"><img class="pre-intro-logo" src="../Images/logo-icon.webp" alt=""></div>
+    </div>
+    <div class="pre-name">
+      <span class="pre-letter">S</span><span class="pre-letter">T</span><span class="pre-letter">A</span><span class="pre-letter">C</span><span class="pre-letter">K</span><span class="pre-letter">L</span><span class="pre-letter">Y</span>
+    </div>
+    <div class="ecg" id="ecg" aria-hidden="true"></div>
+    <div class="pre-count"><span id="preCount">0</span><em>%</em></div>
+    <div class="pre-progress"><span id="preBar"></span></div>
+    <div class="pre-tag"><i class="fa-solid fa-heart-pulse"></i> the people behind the pulse</div>
+  </div>
+</div>
+
+<!-- ================= 01 · HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <a href="../index.html" class="brand">
+    <img class="brand-logo" src="../Images/logo-full.webp" alt="Stackly">
+    
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="#top" class="nav-link nav-active">About</a>
+    <a href="service.html" class="nav-link">Services</a>
+    <a href="doctors.html" class="nav-link">Doctors</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <div class="header-cta">
+    <a href="login.html" class="btn btn-mini" data-magnetic><span>Login <i class="fa-solid fa-arrow-right-long"></i></span></a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- full-screen mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mm-top">
+    <a href="../index.html" class="brand brand--mobile">
+      <img class="brand-logo" src="../Images/logo-full.webp" alt="Stackly">
+      
+    </a>
+    <button class="mm-close" id="mmClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="mm-nav">
+    <a href="../index.html" class="mm-link" style="--i:1"><span>01</span>Home</a>
+    <a href="#top" class="mm-link mm-link--active" style="--i:2" aria-current="page"><span>02</span>About</a>
+    <a href="service.html" class="mm-link" style="--i:3"><span>03</span>Services</a>
+    <a href="doctors.html" class="mm-link" style="--i:4"><span>04</span>Doctors</a>
+    <a href="contact.html" class="mm-link" style="--i:5"><span>05</span>Contact</a>
+  </nav>
+  <div class="mm-bottom">
+    <a href="login.html" class="mm-login" style="--i:6"><i class="fa-solid fa-user-plus"></i> Login to your health account</a>
+    <div class="mm-contact">
+      <span><i class="fa-solid fa-phone-volume"></i> +91 9745634567</span>
+      <span><i class="fa-solid fa-envelope"></i> info@stackly.com</span>
+    </div>
+    <div class="mm-social">
+      <a href="#!" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#!" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#!" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#!" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#!" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<main id="about">
+
+<!-- ================= 02 · THE WARD WALL (HERO) ================= -->
+<section class="vh" id="top">
+  <span class="vh-glow vh-glow--a" aria-hidden="true"></span>
+  <span class="vh-glow vh-glow--b" aria-hidden="true"></span>
+
+  <div class="container vh-head">
+    <p class="vh-eyebrow"><i class="fa-solid fa-heart-pulse"></i> EST. 2001 · SALEM · OPEN 24/7</p>
+    <h1 class="vh-title">
+      <span class="vh-line"><span class="vh-word">Twenty-five years,</span></span>
+      <span class="vh-line vh-line--accent"><span class="vh-word">one unbroken</span></span>
+      <span class="vh-line"><span class="vh-word">heartbeat.</span></span>
+    </h1>
+    <p class="vh-sub">One stubborn idea — that a hospital should feel like home — grew into 240+ specialists across six states, still running on the warmth of a neighbourhood clinic.</p>
+    <div class="vh-cast">
+      <div class="vh-cast-faces">
+        <figure><img src="../Images/doctor-02.webp" alt="A Stackly physician"></figure>
+        <figure><img src="../Images/doctor-05.webp" alt="A Stackly nurse"></figure>
+        <figure><img src="../Images/doctor-09.webp" alt="A Stackly specialist"></figure>
+        <figure><img src="../Images/care-13.webp" alt="A Stackly care team member"></figure>
+      </div>
+      <span class="vh-cast-note"><i class="fa-solid fa-circle-check"></i> Trusted by <b>12,000+</b> patients a year</span>
+    </div>
+    <div class="vh-actions">
+      <a href="404.html" class="hs-btn hs-btn--fill" data-magnetic><span><i class="fa-solid fa-arrow-right-long"></i> Read the origin</span></a>
+      <a href="404.html" class="hs-btn hs-btn--line" data-magnetic><span><i class="fa-solid fa-arrow-down-long"></i> Meet the top</span></a>
+    </div>
+  </div>
+
+  <div class="vh-band">
+    <figure class="vb-tile vb-tile--1">
+      <img src="../Images/doctor-01.webp" alt="A Stackly physician on the first ward">
+      <span class="vb-tag"><i class="fa-solid fa-circle"></i> WARD 001</span>
+    </figure>
+    <figure class="vb-tile vb-tile--2">
+      <img src="../Images/care-01.webp" alt="Everyday care at Stackly">
+    </figure>
+    <div class="vb-quote">
+      <i class="fa-solid fa-quote-left"></i>
+      <p>“Empathy first, precision always — the house rule since day one.”</p>
+      <b>Dr. E. Stackly · Founder</b>
+    </div>
+    <figure class="vb-tile vb-tile--3">
+      <img src="../Images/care-33.webp" alt="Morning rounds at Stackly">
+    </figure>
+    <figure class="vb-tile vb-tile--4">
+      <img src="../Images/doctor-12.webp" alt="A Stackly nurse on the night shift">
+      <span class="vb-tag vb-tag--amber"><i class="fa-solid fa-star-of-life"></i> NIGHT SHIFT</span>
+    </figure>
+  </div>
+
+  <div class="container vh-stats">
+    <div class="vh-stat"><span><i class="fa-solid fa-user-doctor"></i></span><b class="hs-count" data-count="240">0</b><em>specialists</em></div>
+    <div class="vh-stat"><span><i class="fa-solid fa-flag-usa"></i></span><b>06</b><em>states served</em></div>
+    <div class="vh-stat"><span><i class="fa-solid fa-people-roof"></i></span><b class="hs-count" data-count="12000">0</b><em>patients a year</em></div>
+    <div class="vh-stat"><span><i class="fa-solid fa-shield-heart"></i></span><b class="hs-count" data-count="98">0</b><em>stay with us</em></div>
+  </div>
+
+  <div class="vh-tape" data-mq="6" aria-hidden="true">
+    <span>EMPATHY FIRST</span><i class="fa-solid fa-plus"></i><span>PRECISION ALWAYS</span><i class="fa-solid fa-plus"></i><span>ZERO PREVENTABLE HARM</span><i class="fa-solid fa-plus"></i><span>EMPATHY FIRST</span><i class="fa-solid fa-plus"></i><span>PRECISION ALWAYS</span><i class="fa-solid fa-plus"></i><span>ZERO PREVENTABLE HARM</span><i class="fa-solid fa-plus"></i>
+  </div>
+</section>
+
+<!-- ================= 03 · ORIGIN TAPE ================= -->
+<section class="snaps" id="story">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow"><i class="fa-solid fa-wave-square"></i> Since day one</span>
+      <h2 class="sec-title">The tape of our <em>beginning</em></h2>
+      <div class="sec-head-side"><p>Six beds, one promise. Scroll the recording.</p></div>
+    </div>
+    <div class="sn-body">
+      <div class="sn-copy">
+        <p class="sn-lede">In 2001, two resident doctors grew tired of treating file numbers instead of faces. So they opened a single ward on Wells Ave — six beds and one bold promise: <strong>no one gets treated like a chart.</strong></p>
+        <p>That promise became a system. Today Stackly spans six states with 240+ specialists, yet every room still carries the hum of a neighbourhood clinic. We kept the warmth and added the science.</p>
+        <p class="sn-sign"><i class="fa-solid fa-pen-nib"></i> Dr. Mira Chen, co-founder</p>
+      </div>
+      <div class="sn-tape">
+        <div class="sn-row">
+          <figure class="sn-shot"><img src="../Images/care-11.webp" alt="The very first ward"><span class="sn-stamp">EV-01</span></figure>
+          <div class="sn-note"><b>06:14 AM</b><span>The first light on Ward One.</span></div>
+        </div>
+        <div class="sn-row sn-row--flip">
+          <figure class="sn-shot"><img src="../Images/care-21.webp" alt="The founding crew"><span class="sn-stamp">EV-02</span></figure>
+          <div class="sn-note"><b>02:45 PM</b><span>Two doctors, one clipboard, a dream.</span></div>
+        </div>
+        <div class="sn-row">
+          <figure class="sn-shot"><img src="../Images/doctor-07.webp" alt="Early Stackly team"><span class="sn-stamp">EV-03</span></figure>
+          <div class="sn-note"><b>11:02 PM</b><span>Six beds full — the promise held.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="sn-stats">
+      <div class="ss-stat"><span class="ss-ico"><i class="fa-solid fa-calendar-plus"></i></span><span class="ss-num" data-count="2001">0</span><em>year founded</em></div>
+      <div class="ss-stat"><span class="ss-ico"><i class="fa-solid fa-users"></i></span><span class="ss-num" data-count="12000">0</span><em>patients a year</em></div>
+      <div class="ss-stat"><span class="ss-ico"><i class="fa-solid fa-face-grin-hearts"></i></span><span class="ss-num" data-count="98">0</span><em class="ss-unit">%</em><em>stay with us</em></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 · THE ORDERS ================= -->
+<section class="rules" id="mission">
+  <div class="rules-veil" aria-hidden="true"></div>
+  <div class="container rules-grid">
+    <div class="rules-intro">
+      <span class="eyebrow eyebrow--dark"><i class="fa-solid fa-clipboard-list"></i> The orders</span>
+      <h2 class="sec-title sec-title--dark">Five rules we <em>never</em> break</h2>
+      <p>Written in 2001, pinned to every floor, signed by every hire.</p>
+      <figure class="rl-pad"><img src="../Images/care-09.webp" alt="The pinned doctrine sheet"><span class="rl-pin"><i class="fa-solid fa-thumbtack"></i></span><span class="rl-page">P.01</span></figure>
+      <div class="rl-needle" id="rlNeedle"><span id="rlBar"></span></div>
+      <p class="rl-dose"><i class="fa-solid fa-syringe"></i> DOSE: APPLY DAILY</p>
+    </div>
+    <div class="rules-list">
+      <article class="rl-row">
+        <figure class="rl-thumb"><img src="../Images/care-19.webp" alt="Empathy first"><span class="rl-tick">01</span></figure>
+        <div class="rl-txt"><h3><i class="fa-solid fa-heart"></i> Empathy first</h3><p>The chart is a file. The person holding it is not.</p></div>
+        <span class="rl-seal">SIGNED</span>
+      </article>
+      <article class="rl-row">
+        <figure class="rl-thumb"><img src="../Images/care-29.webp" alt="Precision always"><span class="rl-tick">02</span></figure>
+        <div class="rl-txt"><h3><i class="fa-solid fa-microscope"></i> Precision always</h3><p>Measure twice, dose once, double-check anyway.</p></div>
+        <span class="rl-seal">SIGNED</span>
+      </article>
+      <article class="rl-row">
+        <figure class="rl-thumb"><img src="../Images/care-32.webp" alt="Honesty over comfort"><span class="rl-tick">03</span></figure>
+        <div class="rl-txt"><h3><i class="fa-solid fa-scale-balanced"></i> Honesty over comfort</h3><p>We tell the truth first, then we hold your hand.</p></div>
+        <span class="rl-seal">SIGNED</span>
+      </article>
+      <article class="rl-row">
+        <figure class="rl-thumb"><img src="../Images/doctor-05.webp" alt="Warmth by default"><span class="rl-tick">04</span></figure>
+        <div class="rl-txt"><h3><i class="fa-solid fa-hand-holding-heart"></i> Warmth by default</h3><p>Technology runs the machines. We run the conversations.</p></div>
+        <span class="rl-seal">SIGNED</span>
+      </article>
+      <article class="rl-row">
+        <figure class="rl-thumb"><img src="../Images/doctor-02.webp" alt="Grit on hard days"><span class="rl-tick">05</span></figure>
+        <div class="rl-txt"><h3><i class="fa-solid fa-dove"></i> Grit on hard days</h3><p>When a case is cruel, the team bends — never breaks.</p></div>
+        <span class="rl-seal">SIGNED</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 · ONE DAY, ON THE RAIL ================= -->
+<section class="day" id="culture">
+  <div class="day-cap">
+    <div class="container">
+      <span class="eyebrow"><i class="fa-solid fa-clock"></i> Life at Stackly</span>
+      <h2 class="sec-title">A town under <em>one</em> roof</h2>
+    </div>
+  </div>
+  <div class="day-pin" id="dayPin">
+    <div class="day-track" id="dayTrack">
+      <article class="day-cd">
+        <span class="dc-time">07<span>:</span>00</span>
+        <figure class="dc-img"><img src="../Images/care-03.webp" alt="Morning rounds over coffee"><figcaption><b>Morning rounds</b> coffee by seven, charts by 7:30, laughter by eight.</figcaption></figure>
+        <span class="dc-tag"><i class="fa-solid fa-mug-hot"></i> WARD ONE</span>
+      </article>
+      <article class="day-cd">
+        <span class="dc-time">12<span>:</span>30</span>
+        <figure class="dc-img"><img src="../Images/care-05.webp" alt="Lunch on the lawn"><figcaption><b>Lunch on the lawn</b> cardiologists, chefs and kids share the same picnic tables.</figcaption></figure>
+        <span class="dc-tag"><i class="fa-solid fa-leaf"></i> SOUTH LAWN</span>
+      </article>
+      <article class="day-cd">
+        <span class="dc-time">15<span>:</span>00</span>
+        <figure class="dc-img"><img src="../Images/care-08.webp" alt="Grow-a-thons"><figcaption><b>Grow-a-thons</b> every Friday, one hour carved out to learn anything new.</figcaption></figure>
+        <span class="dc-tag"><i class="fa-solid fa-seedling"></i> THE LAB</span>
+      </article>
+      <article class="day-cd">
+        <span class="dc-time">18<span>:</span>30</span>
+        <figure class="dc-img"><img src="../Images/care-25.webp" alt="After hours"><figcaption><b>After-hours</b> band practice in the atrium — yes, the CFO plays drums.</figcaption></figure>
+        <span class="dc-tag"><i class="fa-solid fa-drum"></i> THE ATRIUM</span>
+      </article>
+      <article class="day-cd day-cd--outro">
+        <span class="dc-time dc-time--end">END<span>·</span>CARE</span>
+        <figure class="dc-img"><img src="../Images/care-27.webp" alt="The campus at night"><figcaption><b>And after hours,</b> it is still home. Lights stay on for whoever needs them.</figcaption></figure>
+        <span class="dc-tag"><i class="fa-solid fa-moon"></i> 24 / 7</span>
+      </article>
+    </div>
+  </div>
+  <div class="day-foot">
+    <div class="container">
+      <div class="df-clock" id="dfClock">07:00</div>
+      <div class="df-prog"><span id="dfBar"></span></div>
+      <p class="df-txt" id="dfTxt">WARD ONE — the day wakes up.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 06 · THE PEOPLE AT THE TOP (unchanged) ================= -->
+<section class="leaders" id="leadership">
+  <div class="container">
+    <div class="sec-head sec-head--center">
+      <span class="eyebrow"><i class="fa-solid fa-crown"></i> The people at the top</span>
+      <h2 class="sec-title">Leadership that <em>rounds</em> daily</h2>
+    </div>
+    <div class="ld-rows">
+      <article class="ld-row">
+        <figure class="ld-portrait"><img src="../Images/doctor-08.webp" alt="Dr. Mira Chen"><figcaption>Chief Executive</figcaption></figure>
+        <div class="ld-name" data-txt="Chen">Chen</div>
+        <div class="ld-bio">
+          <h3>Dr. Mira Chen</h3>
+          <p>Co-founder. Runs the hospital the way she ran the first ward — with rounds every morning.</p>
+          <span class="ld-tag"><i class="fa-solid fa-star"></i> 24 yrs at Stackly</span>
+        </div>
+      </article>
+      <article class="ld-row">
+        <figure class="ld-portrait"><img src="../Images/doctor-10.webp" alt="Dr. Ade Faseyi"><figcaption>Chief of Surgery</figcaption></figure>
+        <div class="ld-name" data-txt="Faseyi">Faseyi</div>
+        <div class="ld-bio">
+          <h3>Dr. Ade Faseyi</h3>
+          <p>Led 2,300+ surgeries and still knocks before entering a patient's room. Old school, new heart.</p>
+          <span class="ld-tag"><i class="fa-solid fa-heart"></i> 18 yrs at Stackly</span>
+        </div>
+      </article>
+      <article class="ld-row">
+        <figure class="ld-portrait"><img src="../Images/doctor-14.webp" alt="Dr. Nia Solares"><figcaption>Chief Medical Officer</figcaption></figure>
+        <div class="ld-name" data-txt="Solares">Solares</div>
+        <div class="ld-bio">
+          <h3>Dr. Nia Solares</h3>
+          <p>Patents data pipelines with one hand, samples school cafeteria lunches with the other.</p>
+          <span class="ld-tag"><i class="fa-solid fa-brain"></i> 11 yrs at Stackly</span>
+        </div>
+      </article>
+      <article class="ld-row">
+        <figure class="ld-portrait"><img src="../Images/doctor-16.webp" alt="Dr. Tomas Varela"><figcaption>Chief of Staff</figcaption></figure>
+        <div class="ld-name" data-txt="Varela">Varela</div>
+        <div class="ld-bio">
+          <h3>Dr. Tomas Varela</h3>
+          <p>Keeps 4,000 smiling faces on the roster — patients and staff. A diplomat in a lab coat.</p>
+          <span class="ld-tag"><i class="fa-solid fa-people-group"></i> 9 yrs at Stackly</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 07 · THE LONG WAY HERE ================= -->
+<section class="era" id="milestones">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow eyebrow--dark"><i class="fa-solid fa-hourglass-half"></i> 25 years, one pulse</span>
+      <h2 class="sec-title sec-title--dark">Four <em>eras</em>, one long way</h2>
+      <div class="sec-head-side"><p>Each one stood on the shoulders of the one before.</p></div>
+    </div>
+    <div class="era-list">
+      <article class="era-led">
+        <span class="el-year" data-year="2001">2001</span>
+        <figure class="el-shot"><img src="../Images/care-10.webp" alt="The first ward"><figcaption><b>Seed</b><span>six beds, one promise</span></figcaption></figure>
+        <div class="el-note"><span class="el-ref">AD-01 · 2001</span><h3>The first ward</h3><p>Two residents stake everything on a six-bed ward and a no-charts-ever rule.</p><a href="404.html" class="el-more">Read the log <i class="fa-solid fa-up-right-from-square"></i></a></div>
+      </article>
+      <article class="era-led">
+        <span class="el-year" data-year="2009">2009</span>
+        <figure class="el-shot"><img src="../Images/care-16.webp" alt="The system goes live"><figcaption><b>Scale</b><span>six states, one system</span></figcaption></figure>
+        <div class="el-note"><span class="el-ref">AD-02 · 2009</span><h3>Six states, one system</h3><p>Stackly software links every ward so a patient's story travels with them.</p><a href="404.html" class="el-more">Read the log <i class="fa-solid fa-up-right-from-square"></i></a></div>
+      </article>
+      <article class="era-led">
+        <span class="el-year" data-year="2017">2017</span>
+        <figure class="el-shot"><img src="../Images/care-24.webp" alt="Care in your pocket"><figcaption><b>Agile</b><span>care in your pocket</span></figcaption></figure>
+        <div class="el-note"><span class="el-ref">AD-03 · 2017</span><h3>Care in your pocket</h3><p>The Stackly app ships — bookings, results and refills, all from a couch.</p><a href="404.html" class="el-more">Read the log <i class="fa-solid fa-up-right-from-square"></i></a></div>
+      </article>
+      <article class="era-led">
+        <span class="el-year" data-year="2026">2026</span>
+        <figure class="el-shot"><img src="../Images/doctor-17.webp" alt="A verified record"><figcaption><b>Proof</b><span>zero preventable harm</span></figcaption></figure>
+        <div class="el-note"><span class="el-ref">AD-04 · 2026</span><h3>Zero preventable harm</h3><p>A fully verified record — the promise, kept loud enough to audit.</p><a href="404.html" class="el-more">Read the log <i class="fa-solid fa-up-right-from-square"></i></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 08 · THE VIEWFINDER ================= -->
+<section class="tour" id="campus">
+  <div class="container tour-grid">
+    <div class="tv-list">
+      <span class="eyebrow"><i class="fa-solid fa-location-dot"></i> Postcards from the campus</span>
+      <h2 class="sec-title">Six stops, one <em>campus</em></h2>
+      <p class="tv-hint">Hover the list to preview. Click a stop to open the viewfinder.</p>
+      <ul>
+        <li class="tv-item is-active" data-img="../Images/care-02.webp" data-name="The atrium" data-coords="40.7128° N · 74.0060° W"><span>01</span><b>The atrium</b><em>40.7128° N</em></li>
+        <li class="tv-item" data-img="../Images/care-04.webp" data-name="West garden" data-coords="40.7131° N · 74.0044° W"><span>02</span><b>West garden</b><em>40.7131° N</em></li>
+        <li class="tv-item" data-img="../Images/care-20.webp" data-name="NICU wing" data-coords="40.7122° N · 74.0072° W"><span>03</span><b>NICU wing</b><em>40.7122° N</em></li>
+        <li class="tv-item" data-img="../Images/care-26.webp" data-name="Precision labs" data-coords="40.7136° N · 74.0051° W"><span>04</span><b>Precision labs</b><em>40.7136° N</em></li>
+        <li class="tv-item" data-img="../Images/care-15.webp" data-name="The café" data-coords="40.7119° N · 74.0068° W"><span>05</span><b>The café</b><em>40.7119° N</em></li>
+        <li class="tv-item" data-img="../Images/care-28.webp" data-name="Helipad at dusk" data-coords="40.7140° N · 74.0088° W"><span>06</span><b>Helipad at dusk</b><em>40.7140° N</em></li>
+      </ul>
+    </div>
+    <div class="tv-scope">
+      <div class="tv-frame" id="tvFrame">
+        <img src="../Images/care-02.webp" alt="The atrium" id="tvImg">
+        <span class="tv-corner tv-corner--tl" aria-hidden="true"></span>
+        <span class="tv-corner tv-corner--tr" aria-hidden="true"></span>
+        <span class="tv-corner tv-corner--bl" aria-hidden="true"></span>
+        <span class="tv-corner tv-corner--br" aria-hidden="true"></span>
+        <span class="tv-cross tv-cross--x" aria-hidden="true"></span>
+        <span class="tv-cross tv-cross--y" aria-hidden="true"></span>
+        <figcaption id="tvName">The atrium</figcaption>
+      </div>
+      <div class="tv-read">
+        <span class="tv-read-ico"><i class="fa-solid fa-satellite-dish"></i></span>
+        <span id="tvCoords">40.7128° N · 74.0060° W</span>
+        <span class="tv-roll"><i id="tvRoll"></i></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 09 · VERIFIABLY GOOD ================= -->
+<section class="creds" id="stamps">
+  <div class="creds-bare" aria-hidden="true"></div>
+  <div class="container">
+    <div class="sec-head sec-head--center">
+      <span class="eyebrow eyebrow--dark"><i class="fa-solid fa-certificate"></i> The paperwork that matters</span>
+      <h2 class="sec-title sec-title--dark">Verifiably <em>good</em></h2>
+    </div>
+    <div class="cred-wall">
+      <article class="cred-pane">
+        <span class="cr-index">JCI-01</span>
+        <figure class="cr-photo"><img src="../Images/care-30.webp" alt="JCI ceremony"><span class="cr-shade" aria-hidden="true"></span></figure>
+        <div class="cr-body"><h3>JCI Gold</h3><p>Perioperative &amp; clinical excellence</p><span class="cr-years">2014 — 2026</span></div>
+        <span class="cr-seal"><i class="fa-solid fa-stamp"></i> VERIFIED</span>
+      </article>
+      <article class="cred-pane">
+        <span class="cr-index">TECH-02</span>
+        <figure class="cr-photo"><img src="../Images/care-12.webp" alt="Technology recognition"><span class="cr-shade" aria-hidden="true"></span></figure>
+        <div class="cr-body"><h3>Most Innovative</h3><p>Healthcare IT award, three years running</p><span class="cr-years">2022 — 2026</span></div>
+        <span class="cr-seal"><i class="fa-solid fa-stamp"></i> VERIFIED</span>
+      </article>
+      <article class="cred-pane">
+        <span class="cr-index">SAF-03</span>
+        <figure class="cr-photo"><img src="../Images/care-31.webp" alt="Patient safety audit"><span class="cr-shade" aria-hidden="true"></span></figure>
+        <div class="cr-body"><h3>Safety First</h3><p>Zero-preventable-harm verified record</p><span class="cr-years">2018 — 2026</span></div>
+        <span class="cr-seal"><i class="fa-solid fa-stamp"></i> VERIFIED</span>
+      </article>
+      <article class="cred-pane">
+        <span class="cr-index">CITY-04</span>
+        <figure class="cr-photo"><img src="../Images/care-33.webp" alt="Community award"><span class="cr-shade" aria-hidden="true"></span></figure>
+        <div class="cr-body"><h3>Heart of the City</h3><p>Community care by neighbourhood vote</p><span class="cr-years">2020 — 2026</span></div>
+        <span class="cr-seal"><i class="fa-solid fa-stamp"></i> VERIFIED</span>
+      </article>
+    </div>
+    <div class="cred-tape" aria-hidden="true">
+      <span class="ct-barcode"></span>
+      <span class="ct-txt">OFFICIAL RECORD · 4/4 VALID · OFFICIAL RECORD · 4/4 VALID · OFFICIAL RECORD · 4/4 VALID</span>
+      <span class="ct-barcode"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 10 · THE GUESTBOOK ================= -->
+<section class="voices" id="impact">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow"><i class="fa-solid fa-quote-left"></i> Voices</span>
+      <h2 class="sec-title">Stories that <em>stayed</em> with us</h2>
+      <div class="sec-head-side"><p>Three people, three encounters, one hospital.</p></div>
+    </div>
+    <div class="voices-rig" id="voicesRig">
+      <aside class="vo-handles">
+        <button class="vo-item is-active" data-i="0">
+          <span class="vo-ava"><img src="../Images/doctor-06.webp" alt="Hugo P."></span>
+          <b>Hugo P.</b><em>Guardian member</em><i class="fa-solid fa-caret-right" aria-hidden="true"></i>
+        </button>
+        <button class="vo-item" data-i="1">
+          <span class="vo-ava"><img src="../Images/doctor-11.webp" alt="Renata M."></span>
+          <b>Renata M.</b><em>Parent</em><i class="fa-solid fa-caret-right" aria-hidden="true"></i>
+        </button>
+        <button class="vo-item" data-i="2">
+          <span class="vo-ava"><img src="../Images/doctor-13.webp" alt="Sam K."></span>
+          <b>Sam K.</b><em>Porter team</em><i class="fa-solid fa-caret-right" aria-hidden="true"></i>
+        </button>
+      </aside>
+      <div class="vo-stage">
+        <figure class="vo-back" id="voBack"><img src="../Images/doctor-06.webp" alt=""></figure>
+        <div class="vo-scrim" id="voScrim"></div>
+        <blockquote class="vo-quote" id="voQuote">“<em class="vo-hl">The nurse remembered my name</em> — and my dog's name. That was the whole hospital in one sentence.”</blockquote>
+        <div class="vo-meta"><span class="vo-big" id="voBig">01</span><span class="vo-sig" id="voSig">signed: Hugo P. · atrium, 3pm</span></div>
+      </div>
+    </div>
+    <div class="vo-run" data-mq="2" aria-hidden="true">
+      <span>HEARD LOUD &amp; CLEAR</span><i class="fa-solid fa-quote-right"></i>
+      <span>HEARD LOUD &amp; CLEAR</span><i class="fa-solid fa-quote-right"></i>
+      <span>HEARD LOUD &amp; CLEAR</span><i class="fa-solid fa-quote-right"></i>
+      <span>HEARD LOUD &amp; CLEAR</span><i class="fa-solid fa-quote-right"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 11 · JOIN (unchanged) ================= -->
+<section class="join" id="join">
+  <div class="join-banner">
+    <figure class="join-img"><img src="../Images/doctor-18.webp" alt="Stackly team waving"></figure>
+    <span class="join-scrim"></span>
+    <div class="join-copy">
+      <p class="join-eyebrow"><i class="fa-solid fa-paper-plane"></i> Come and sit with us</p>
+      <h2 class="join-title">Your hands <em>belong here.</em></h2>
+      <p class="join-sub">400+ open roles — from surgeons to software. Bring your heart, we'll handle the rest.</p>
+      <div class="join-actions">
+        <a href="404.html" class="btn btn-amber" data-magnetic><span>See open roles <i class="fa-solid fa-arrow-right-long"></i></span></a>
+        <a href="404.html" class="btn btn-line btn-line--light" data-magnetic><span><i class="fa-solid fa-comment-sms"></i> Talk to us</span></a>
+      </div>
+    </div>
+    <div class="join-tape" data-mq="2" aria-hidden="true">
+      <span>JOIN STACKLY</span><i class="fa-solid fa-heart-pulse"></i><span>JOIN STACKLY</span><i class="fa-solid fa-heart-pulse"></i><span>JOIN STACKLY</span><i class="fa-solid fa-heart-pulse"></i><span>JOIN STACKLY</span><i class="fa-solid fa-heart-pulse"></i>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= 12 · FOOTER ================= -->
+<footer class="footer" id="footer">
+  <div class="container footer-grid">
+    <div class="foot-brand">
+      <a href="../index.html" class="brand brand--foot">
+        <img class="brand-logo" src="../Images/logo-full.webp" alt="Stackly">
+        
+      </a>
+      <p>Stackly is the healthcare management system built around you — uniting 240+
+        specialists, smart diagnostics and human warmth under one roof.</p>
+      <div class="foot-social">
+        <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="foot-col">
+      <h4>Quick Links</h4>
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="foot-col">
+      <h4>Departments</h4>
+      <a href="404.html">Cardiology</a>
+      <a href="404.html">Neurology</a>
+      <a href="404.html">Maternity &amp; NICU</a>
+      <a href="404.html">Precision labs</a>
+      <a href="404.html">Emergency 24/7</a>
+    </div>
+
+    <div class="foot-col foot-contact">
+      <h4>Get in touch</h4>
+      <a href="404.html"><i class="fa-solid fa-envelope"></i> info@stackly.com</a>
+      <a href="404.html"><i class="fa-solid fa-phone-volume"></i> +91 9745634567</a>
+      <a href="404.html"><i class="fa-solid fa-location-dot"></i> MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil,<br>Salem, Tamil Nadu 636008</a>
+    </div>
+
+    <div class="foot-col foot-news">
+      <h4>Newsletter</h4>
+      <p>One gentle email a month — health tips, offers and zero spam.</p>
+      <form class="news-form" id="newsForm" novalidate>
+        <div class="nf-row">
+          <input type="email" id="newsEmail" placeholder="Your email address" aria-label="Newsletter email">
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <p class="nf-err" id="newsErr" hidden><i class="fa-solid fa-circle-exclamation"></i> Please enter a valid email address.</p>
+        <p class="nf-ok" id="newsOk" hidden><i class="fa-solid fa-circle-check"></i> You're on the list — welcome to Stackly!</p>
+      </form>
+    </div>
+  </div>
+
+  <div class="foot-marquee" aria-hidden="true">
+    <div class="fm-track" data-mq="2">
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Stackly All Rights Reserved</p>
+      <div class="foot-legal">
+        <a href="404.html">Terms &amp; Conditions</a>
+        <a href="404.html">Privacy Policy</a>
+        <a href="404.html">Cookie Settings</a>
+      </div>
+      <p class="foot-made">Crafted with <i class="fa-solid fa-heart"></i> for healthier days</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up-long"></i></button>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="../JS/about.js"></script>
+</body>
+</html>

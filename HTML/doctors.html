@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Doctors — Meet the specialists of Stackly</title>
+  <meta name="description" content="Meet the Stackly doctors — 240+ board-certified specialists across cardiology, neurology, orthopedics, pediatrics and more. Browse by specialty, check availability and book online.">
+  <link rel="icon" type="image/webp" href="../Images/logo-icon.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/doctors.css">
+</head>
+<body>
+
+<!-- ================= PRELOADER ================= -->
+<div id="preloader">
+  <div class="pre-grid"></div>
+  <div class="pre-center">
+    <div class="pre-orbit">
+      <span class="pre-pulse"></span>
+      <span class="pre-ring pre-ring--a"></span>
+      <span class="pre-ring pre-ring--b"></span>
+      <span class="pre-ring pre-ring--c"></span>
+      <span class="pre-cross pre-cross--1"><i class="fa-solid fa-plus"></i></span>
+      <span class="pre-cross pre-cross--2"><i class="fa-solid fa-star-of-life"></i></span>
+      <span class="pre-cross pre-cross--3"><i class="fa-solid fa-plus"></i></span>
+      <span class="pre-cross pre-cross--4"><i class="fa-solid fa-star-of-life"></i></span>
+      <div class="pre-intro-mark"><img class="pre-intro-logo" src="../Images/logo-icon.webp" alt=""></div>
+    </div>
+    <div class="pre-name">
+      <span class="pre-letter">S</span><span class="pre-letter">T</span><span class="pre-letter">A</span><span class="pre-letter">C</span><span class="pre-letter">K</span><span class="pre-letter">L</span><span class="pre-letter">Y</span>
+    </div>
+    <div class="ecg" id="ecg" aria-hidden="true"></div>
+    <div class="pre-count"><span id="preCount">0</span><em>%</em></div>
+    <div class="pre-progress"><span id="preBar"></span></div>
+    <div class="pre-tag"><i class="fa-solid fa-stethoscope"></i> assembling the care team</div>
+  </div>
+</div>
+
+<!-- ================= 01 · HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <a href="../index.html" class="brand">
+    <img class="brand-logo" src="../Images/logo-full.webp" alt="Stackly">
+    
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="service.html" class="nav-link">Services</a>
+    <a href="#top" class="nav-link nav-active">Doctors</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <div class="header-cta">
+    <a href="login.html" class="btn btn-mini" data-magnetic><span>Login <i class="fa-solid fa-arrow-right-long"></i></span></a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- full-screen mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mm-top">
+    <a href="../index.html" class="brand brand--mobile">
+      <img class="brand-logo" src="../Images/logo-full.webp" alt="Stackly">
+      
+    </a>
+    <button class="mm-close" id="mmClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="mm-nav">
+    <a href="../index.html" class="mm-link" style="--i:1"><span>01</span>Home</a>
+    <a href="about.html" class="mm-link" style="--i:2"><span>02</span>About</a>
+    <a href="service.html" class="mm-link" style="--i:3"><span>03</span>Services</a>
+    <a href="#top" class="mm-link mm-link--active" style="--i:4" aria-current="page"><span>04</span>Doctors</a>
+    <a href="contact.html" class="mm-link" style="--i:5"><span>05</span>Contact</a>
+  </nav>
+  <div class="mm-bottom">
+    <a href="login.html" class="mm-login" style="--i:6"><i class="fa-solid fa-user-plus"></i> Login to your health account</a>
+    <div class="mm-contact">
+      <span><i class="fa-solid fa-phone-volume"></i> +91 9745634567</span>
+      <span><i class="fa-solid fa-envelope"></i> info@stackly.com</span>
+    </div>
+    <div class="mm-social">
+      <a href="#!" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#!" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#!" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#!" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#!" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<main id="doctors">
+
+<!-- ================= 02 · HERO — ROSTER MOSAIC ================= -->
+<section class="dh" id="top">
+  <span class="dh-glow dh-glow--a" aria-hidden="true"></span>
+  <span class="dh-glow dh-glow--b" aria-hidden="true"></span>
+
+  <div class="container dh-head">
+    <p class="dh-eyebrow"><i class="fa-solid fa-user-doctor"></i> The Stackly roster · 240+ specialists</p>
+    <h1 class="dh-title">
+      <span class="dh-line"><span class="dh-w">Meet the hands</span></span>
+      <span class="dh-line dh-line--accent"><span class="dh-w">behind a steadier</span></span>
+      <span class="dh-line"><span class="dh-w">heart<em class="dh-dot">.</em></span></span>
+    </h1>
+    <p class="dh-sub">Ten disciplines, one team. Every Stackly doctor is board-certified, empathy-checked and one message away — browse the board and meet the person who'll know your name.</p>
+  </div>
+
+  <div class="container dh-stage-wrap">
+    <div class="dh-mosaic" id="dhMosaic">
+      <figure class="dm-tile dm-a"><img src="../Images/doctor-05.webp" alt="Dr. Alana Yorke, Cardiology"><figcaption><b>Dr. Alana Yorke</b><span>Cardiology</span></figcaption></figure>
+      <figure class="dm-tile dm-b"><img src="../Images/doctor-11.webp" alt="Dr. Omar Kent, Neurology"><figcaption><b>Dr. Omar Kent</b><span>Neurology</span></figcaption></figure>
+      <figure class="dm-tile dm-c"><img src="../Images/doctor-13.webp" alt="Dr. Ines Duarte, Pediatrics"><figcaption><b>Dr. Ines Duarte</b><span>Pediatrics</span></figcaption></figure>
+      <figure class="dm-tile dm-d"><img src="../Images/doctor-15.webp" alt="Dr. Elias Frost, Orthopedics"><figcaption><b>Dr. Elias Frost</b><span>Orthopedics</span></figcaption></figure>
+      <figure class="dm-tile dm-e"><img src="../Images/doctor-18.webp" alt="Dr. Priya Nand, Dermatology"><figcaption><b>Dr. Priya Nand</b><span>Dermatology</span></figcaption></figure>
+      <figure class="dm-tile dm-f"><img src="../Images/doctor-04.webp" alt="Dr. Noah Berg, Radiology"><figcaption><b>Dr. Noah Berg</b><span>Radiology</span></figcaption></figure>
+      <figure class="dm-tile dm-g"><img src="../Images/doctor-01.webp" alt="Dr. Mara Vidal, Maternity"><figcaption><b>Dr. Mara Vidal</b><span>Maternity</span></figcaption></figure>
+      <figure class="dm-tile dm-h"><img src="../Images/doctor-03.webp" alt="Dr. Ken Osei, Emergency"><figcaption><b>Dr. Ken Osei</b><span>Emergency</span></figcaption></figure>
+      <figure class="dm-tile dm-j"><img src="../Images/doctor-06.webp" alt="Dr. Lena Park, Oncology"><figcaption><b>Dr. Lena Park</b><span>Oncology</span></figcaption></figure>
+      <figure class="dm-tile dm-k"><img src="../Images/doctor-08.webp" alt="Dr. Rhys Callan, Pulmonology"><figcaption><b>Dr. Rhys Callan</b><span>Pulmonology</span></figcaption></figure>
+
+      <div class="dm-info dm-i">
+        <p class="dm-info-eyebrow"><i class="fa-solid fa-circle-nodes"></i> Ten wings, one team</p>
+        <p class="dm-info-note">Every name below is real, verified and taking new patients.</p>
+        <div class="dm-info-actions">
+          <a href="404.html" class="btn btn-amber" data-magnetic><span>Book a consult <i class="fa-solid fa-arrow-right-long"></i></span></a>
+          <a href="404.html" class="btn btn-line btn-line--light" data-magnetic><span><i class="fa-solid fa-grip"></i> Browse board</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dh-ticker" aria-hidden="true">
+    <div class="dht-track" data-mq="12">
+      <span>CARDIOLOGY</span><i class="fa-solid fa-heart-pulse"></i><span>NEUROLOGY</span><i class="fa-solid fa-brain"></i><span>ORTHOPEDICS</span><i class="fa-solid fa-bone"></i><span>PEDIATRICS</span><i class="fa-solid fa-baby"></i><span>ONCOLOGY</span><i class="fa-solid fa-ribbon"></i><span>RADIOLOGY</span><i class="fa-solid fa-wave-square"></i>
+      <span>CARDIOLOGY</span><i class="fa-solid fa-heart-pulse"></i><span>NEUROLOGY</span><i class="fa-solid fa-brain"></i><span>ORTHOPEDICS</span><i class="fa-solid fa-bone"></i><span>PEDIATRICS</span><i class="fa-solid fa-baby"></i><span>ONCOLOGY</span><i class="fa-solid fa-ribbon"></i><span>RADIOLOGY</span><i class="fa-solid fa-wave-square"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 · SPECIALTY COVERFLOW ================= -->
+<section class="cf" id="specialties">
+  <div class="container">
+    <div class="sec-head cf-head">
+      <span class="eyebrow"><i class="fa-solid fa-layer-group"></i> Browse by discipline</span>
+      <h2 class="sec-title">Spin the <em>specialty</em> deck</h2>
+      <div class="sec-head-side"><p>Seven wings in rotation — turn the dial to meet the lead of each.</p></div>
+    </div>
+
+    <div class="cf-stage" id="cfStage">
+      <div class="cf-track" id="cfTrack">
+        <article class="cf-card">
+          <figure class="cf-pic"><img src="../Images/doctor-05.webp" alt="Dr. Alana Yorke, Cardiology"><span class="cf-num">01</span></figure>
+          <div class="cf-body">
+            <span class="cf-spec"><i class="fa-solid fa-heart-pulse"></i> Cardiology</span>
+            <h3>Dr. Alana Yorke</h3>
+            <p>Interventional cardiologist. Runs the chest-pain fast lane — door to balloon in 41 minutes.</p>
+            <span class="cf-tags"><i class="fa-solid fa-award"></i> 18 yrs · 4,200 procedures</span>
+          </div>
+        </article>
+        <article class="cf-card">
+          <figure class="cf-pic"><img src="../Images/doctor-11.webp" alt="Dr. Omar Kent, Neurology"><span class="cf-num">02</span></figure>
+          <div class="cf-body">
+            <span class="cf-spec"><i class="fa-solid fa-brain"></i> Neurology</span>
+            <h3>Dr. Omar Kent</h3>
+            <p>Stroke &amp; cognitive rehab. Believes every scan deserves a conversation, not just a report.</p>
+            <span class="cf-tags"><i class="fa-solid fa-award"></i> 15 yrs · 900+ cases</span>
+          </div>
+        </article>
+        <article class="cf-card">
+          <figure class="cf-pic"><img src="../Images/doctor-13.webp" alt="Dr. Ines Duarte, Pediatrics"><span class="cf-num">03</span></figure>
+          <div class="cf-body">
+            <span class="cf-spec"><i class="fa-solid fa-baby"></i> Pediatrics</span>
+            <h3>Dr. Ines Duarte</h3>
+            <p>Keeps a drawer of stickers and a NICU team that celebrates every gram. Kids ask for her by name.</p>
+            <span class="cf-tags"><i class="fa-solid fa-award"></i> 12 yrs · 6,000 kids</span>
+          </div>
+        </article>
+        <article class="cf-card">
+          <figure class="cf-pic"><img src="../Images/doctor-15.webp" alt="Dr. Elias Frost, Orthopedics"><span class="cf-num">04</span></figure>
+          <div class="cf-body">
+            <span class="cf-spec"><i class="fa-solid fa-bone"></i> Orthopedics</span>
+            <h3>Dr. Elias Frost</h3>
+            <p>Sports &amp; joint reconstruction. Gets runners back on the road — and tells them when to rest.</p>
+            <span class="cf-tags"><i class="fa-solid fa-award"></i> 20 yrs · 2,800 surgeries</span>
+          </div>
+        </article>
+        <article class="cf-card">
+          <figure class="cf-pic"><img src="../Images/doctor-06.webp" alt="Dr. Lena Park, Oncology"><span class="cf-num">05</span></figure>
+          <div class="cf-body">
+            <span class="cf-spec"><i class="fa-solid fa-ribbon"></i> Oncology</span>
+            <h3>Dr. Lena Park</h3>
+            <p>Precision oncology with a human plan. Runs the weekly survivorship circle she founded.</p>
+            <span class="cf-tags"><i class="fa-solid fa-award"></i> 14 yrs · 1,100 journeys</span>
+          </div>
+        </article>
+        <article class="cf-card">
+          <figure class="cf-pic"><img src="../Images/doctor-18.webp" alt="Dr. Priya Nand, Dermatology"><span class="cf-num">06</span></figure>
+          <div class="cf-body">
+            <span class="cf-spec"><i class="fa-solid fa-hand-dots"></i> Dermatology</span>
+            <h3>Dr. Priya Nand</h3>
+            <p>Medical &amp; surgical skin care — from stubborn rashes to early melanoma caught at 3mm.</p>
+            <span class="cf-tags"><i class="fa-solid fa-award"></i> 10 yrs · 9,000 visits</span>
+          </div>
+        </article>
+        <article class="cf-card">
+          <figure class="cf-pic"><img src="../Images/doctor-04.webp" alt="Dr. Noah Berg, Radiology"><span class="cf-num">07</span></figure>
+          <div class="cf-body">
+            <span class="cf-spec"><i class="fa-solid fa-wave-square"></i> Radiology</span>
+            <h3>Dr. Noah Berg</h3>
+            <p>Reads 40,000 images a year and still calls every patient with an abnormal result himself.</p>
+            <span class="cf-tags"><i class="fa-solid fa-award"></i> 16 yrs · 640k scans</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="cf-nav">
+      <button class="cf-btn" id="cfPrev" aria-label="Previous specialty"><i class="fa-solid fa-arrow-left-long"></i></button>
+      <span class="cf-count"><b id="cfIndex">01</b> <em>/ 07</em></span>
+      <button class="cf-btn" id="cfNext" aria-label="Next specialty"><i class="fa-solid fa-arrow-right-long"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 · THE RESIDENT BOARD ================= -->
+<section class="dib" id="board">
+  <span class="dib-glow" aria-hidden="true"></span>
+
+  <div class="container dib-grid">
+    <div class="dib-intro" id="dibIntro">
+      <span class="eyebrow eyebrow--dark"><i class="fa-solid fa-id-card"></i> In-house · the board</span>
+      <h2 class="sec-title sec-title--dark">Three names the floor<br><em>puts first.</em></h2>
+      <p class="dib-lede">This board doesn't sit behind glass. All three still take shifts, still take calls, and still know their patients by name.</p>
+      <ul class="dib-list">
+        <li><i class="fa-solid fa-circle-check"></i> Verified &amp; board-certified, no exceptions</li>
+        <li><i class="fa-solid fa-circle-check"></i> Each one answers patient messages</li>
+        <li><i class="fa-solid fa-circle-check"></i> Lead replies in about 11 hours</li>
+      </ul>
+    </div>
+
+    <div class="dib-cards" id="dibCards">
+      <article class="dib-card" tabindex="0">
+        <span class="dib-line" aria-hidden="true"></span>
+        <figure class="dib-photo"><img src="../Images/doctor-10.webp" alt="Dr. Ade Faseyi — Chief of surgery"></figure>
+        <div class="dib-body">
+          <span class="dib-idx">01</span>
+          <span class="dib-role"><i class="fa-solid fa-scalpel"></i> Chief of surgery</span>
+          <h3>Dr. Ade Faseyi</h3>
+          <p>2,300 surgeries and still knocks before entering. He rebuilt our theatres around one rule — the patient wakes to a familiar face.</p>
+          <span class="dib-foot"><i class="fa-solid fa-medal"></i> 18 yrs · 98.7% success rate</span>
+        </div>
+      </article>
+
+      <article class="dib-card" tabindex="0">
+        <span class="dib-line" aria-hidden="true"></span>
+        <figure class="dib-photo"><img src="../Images/doctor-14.webp" alt="Dr. Nia Solares — Chief medical officer"></figure>
+        <div class="dib-body">
+          <span class="dib-idx">02</span>
+          <span class="dib-role"><i class="fa-solid fa-microscope"></i> Chief medical officer</span>
+          <h3>Dr. Nia Solares</h3>
+          <p>Reads data the way others read novels. She built the early-warning engine that flags a deteriorating patient four hours sooner.</p>
+          <span class="dib-foot"><i class="fa-solid fa-medal"></i> 11 yrs · 40+ papers published</span>
+        </div>
+      </article>
+
+      <article class="dib-card" tabindex="0">
+        <span class="dib-line" aria-hidden="true"></span>
+        <figure class="dib-photo"><img src="../Images/doctor-16.webp" alt="Dr. Tomas Varela — Chief of staff"></figure>
+        <div class="dib-body">
+          <span class="dib-idx">03</span>
+          <span class="dib-role"><i class="fa-solid fa-people-group"></i> Chief of staff</span>
+          <h3>Dr. Tomas Varela</h3>
+          <p>Keeps 4,000 people — patients and staff — pulling the same direction. If a ward is short-handed, he is the first to pull a shift.</p>
+          <span class="dib-foot"><i class="fa-solid fa-medal"></i> 9 yrs · 120 residents a year</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 · VITALS GAUGES ================= -->
+<section class="dg" id="vitals">
+  <div class="container">
+    <div class="sec-head dg-head">
+      <div>
+        <span class="eyebrow"><i class="fa-solid fa-gauge-high"></i> Vitals of the roster</span>
+        <h2 class="sec-title">Numbers we keep<br><em>beating</em> on</h2>
+      </div>
+      <div class="sec-head-side"><p>Measured across the last twelve months of care.</p></div>
+    </div>
+
+    <div class="dg-row">
+      <article class="dg-gauge" data-val="98" style="--p:0">
+        <div class="dg-dial"><span class="dg-num" data-count="98">0</span><em>%</em></div>
+        <h3>Would return</h3>
+        <p>Patients who'd choose Stackly again.</p>
+        <span class="dg-ava"><img src="../Images/doctor-02.webp" alt="Patient"><img src="../Images/doctor-07.webp" alt="Patient"><img src="../Images/doctor-17.webp" alt="Patient"></span>
+      </article>
+      <article class="dg-gauge" data-val="96" style="--p:0">
+        <div class="dg-dial"><span class="dg-num" data-count="96">0</span><em>%</em></div>
+        <h3>On-time starts</h3>
+        <p>Consults that begin within five minutes.</p>
+        <span class="dg-ava"><img src="../Images/doctor-09.webp" alt="Patient"><img src="../Images/doctor-12.webp" alt="Patient"><img src="../Images/doctor-19.webp" alt="Patient"></span>
+      </article>
+      <article class="dg-gauge" data-val="89" style="--p:0">
+        <div class="dg-dial"><span class="dg-num" data-count="89">0</span><em>%</em></div>
+        <h3>First-call fix</h3>
+        <p>Issues resolved on the very first consult.</p>
+        <span class="dg-ava"><img src="../Images/doctor-03.webp" alt="Patient"><img src="../Images/doctor-06.webp" alt="Patient"><img src="../Images/doctor-16.webp" alt="Patient"></span>
+      </article>
+      <article class="dg-gauge" data-val="72" style="--p:0">
+        <div class="dg-dial"><span class="dg-num" data-count="72">0</span><em>h</em></div>
+        <h3>To see a lead</h3>
+        <p>Average wait for a senior specialist.</p>
+        <span class="dg-ava"><img src="../Images/doctor-01.webp" alt="Patient"><img src="../Images/doctor-08.webp" alt="Patient"><img src="../Images/doctor-14.webp" alt="Patient"></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 06 · TELEHEALTH CONSOLE ================= -->
+<section class="dx" id="telehealth">
+  <div class="container dx-grid">
+    <div class="dx-copy">
+      <span class="eyebrow eyebrow--dark"><i class="fa-solid fa-video"></i> Care, wherever you are</span>
+      <h2 class="sec-title sec-title--dark">Your specialist,<br>one tap <em>closer.</em></h2>
+      <p>Video consults, instant prescriptions and follow-ups that don't make you travel. The same doctor, the same record — from your kitchen table.</p>
+      <ul class="dx-feats">
+        <li><span><i class="fa-solid fa-bolt"></i></span><div><b>Connect in 90 seconds</b><p>No queues, no hold music — straight into the room.</p></div></li>
+        <li><span><i class="fa-solid fa-file-prescription"></i></span><div><b>Prescriptions that travel</b><p>Sent to any pharmacy before the call even ends.</p></div></li>
+        <li><span><i class="fa-solid fa-shield-heart"></i></span><div><b>Private by default</b><p>End-to-end encrypted rooms, deleted after 30 days.</p></div></li>
+      </ul>
+      <a href="404.html" class="btn btn-amber" data-magnetic><span>Start a tele-consult <i class="fa-solid fa-arrow-right-long"></i></span></a>
+    </div>
+
+    <div class="dx-console" id="dxConsole">
+      <div class="dx-screen">
+        <img id="dxDoc" src="../Images/doctor-19.webp" alt="Dr. Omar Kent on a video call">
+        <span class="dx-live"><i></i> Live · Dr. Omar Kent</span>
+        <span class="dx-bubble dx-b1"><i class="fa-solid fa-heart"></i> Your ECG looks calm</span>
+        <span class="dx-bubble dx-b2"><i class="fa-solid fa-pills"></i> Sending the script now</span>
+        <span class="dx-scan" aria-hidden="true"></span>
+      </div>
+      <div class="dx-dock">
+        <button aria-label="Mute"><i class="fa-solid fa-microphone"></i></button>
+        <button aria-label="Camera"><i class="fa-solid fa-video"></i></button>
+        <button aria-label="Share screen"><i class="fa-solid fa-display"></i></button>
+        <span class="dx-avas">
+          <img src="../Images/doctor-11.webp" alt="Doctor"><img src="../Images/doctor-13.webp" alt="Doctor"><img src="../Images/doctor-15.webp" alt="Doctor">
+        </span>
+        <button class="dx-end" aria-label="End call"><i class="fa-solid fa-phone-slash"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 07 · AVAILABILITY BOARD ================= -->
+<section class="db" id="availability">
+  <div class="container">
+    <div class="sec-head db-head">
+      <span class="eyebrow"><i class="fa-solid fa-calendar-days"></i> This week's rounds</span>
+      <h2 class="sec-title">Who's <em>on call</em> today?</h2>
+      <div class="sec-head-side"><p>Pick a day and a doctor — the live slots update instantly.</p></div>
+    </div>
+
+    <div class="db-wrap">
+      <div class="db-days" id="dbDays" role="tablist" aria-label="Choose a day">
+        <button class="db-day is-on" data-day="mon" role="tab" aria-selected="true">Mon <b>12</b></button>
+        <button class="db-day" data-day="tue" role="tab" aria-selected="false">Tue <b>13</b></button>
+        <button class="db-day" data-day="wed" role="tab" aria-selected="false">Wed <b>14</b></button>
+        <button class="db-day" data-day="thu" role="tab" aria-selected="false">Thu <b>15</b></button>
+        <button class="db-day" data-day="fri" role="tab" aria-selected="false">Fri <b>16</b></button>
+        <button class="db-day" data-day="sat" role="tab" aria-selected="false">Sat <b>17</b></button>
+      </div>
+
+      <div class="db-body">
+        <aside class="db-doctors" id="dbDocs" aria-label="Choose a doctor">
+          <button class="db-doc is-on" data-doc="yorke">
+            <span class="db-face"><img src="../Images/doctor-05.webp" alt="Dr. Alana Yorke"></span>
+            <span class="db-meta"><b>Dr. Alana Yorke</b><em>Cardiology</em></span>
+            <i class="fa-solid fa-circle-check db-tick"></i>
+          </button>
+          <button class="db-doc" data-doc="kent">
+            <span class="db-face"><img src="../Images/doctor-11.webp" alt="Dr. Omar Kent"></span>
+            <span class="db-meta"><b>Dr. Omar Kent</b><em>Neurology</em></span>
+            <i class="fa-solid fa-circle-check db-tick"></i>
+          </button>
+          <button class="db-doc" data-doc="duarte">
+            <span class="db-face"><img src="../Images/doctor-13.webp" alt="Dr. Ines Duarte"></span>
+            <span class="db-meta"><b>Dr. Ines Duarte</b><em>Pediatrics</em></span>
+            <i class="fa-solid fa-circle-check db-tick"></i>
+          </button>
+          <button class="db-doc" data-doc="frost">
+            <span class="db-face"><img src="../Images/doctor-15.webp" alt="Dr. Elias Frost"></span>
+            <span class="db-meta"><b>Dr. Elias Frost</b><em>Orthopedics</em></span>
+            <i class="fa-solid fa-circle-check db-tick"></i>
+          </button>
+        </aside>
+
+        <div class="db-slots-panel">
+          <div class="db-slots-head">
+            <span><i class="fa-solid fa-clock"></i> Available today</span>
+            <span class="db-live"><i></i> updated live</span>
+          </div>
+          <div class="db-slots" id="dbSlots"></div>
+          <p class="db-hint"><i class="fa-solid fa-circle-info"></i> Times shown in your local zone. Slots refresh every few minutes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 08 · CASE-FILE DECK ================= -->
+<section class="dk" id="procedures">
+  <div class="container">
+    <div class="sec-head sec-head--center dk-head">
+      <span class="eyebrow eyebrow--dark"><i class="fa-solid fa-folder-open"></i> What we do</span>
+      <h2 class="sec-title sec-title--dark">A tray of <em>everyday miracles</em></h2>
+      <p class="dk-sub">Five rooms, five teams, thousands of quiet wins. Scroll to fan the case files.</p>
+    </div>
+  </div>
+
+  <div class="dk-stage" id="dkStage">
+    <article class="dk-card" data-i="0">
+      <figure class="dk-pic"><img src="../Images/care-21.webp" alt="Cardiac catheter lab"><span class="dk-scan" aria-hidden="true"></span></figure>
+      <div class="dk-cap"><span class="dk-num">01</span><h3>Cardiac cath lab</h3><p>Stents, valves and rhythm — the fast lane for frightened hearts.</p></div>
+    </article>
+    <article class="dk-card" data-i="1">
+      <figure class="dk-pic"><img src="../Images/care-22.webp" alt="Robotic surgery theatre"><span class="dk-scan" aria-hidden="true"></span></figure>
+      <div class="dk-cap"><span class="dk-num">02</span><h3>Robotic theatres</h3><p>Millimetre precision, kinder recovery and scars you'll barely find.</p></div>
+    </article>
+    <article class="dk-card" data-i="2">
+      <figure class="dk-pic"><img src="../Images/care-23.webp" alt="NICU wing"><span class="dk-scan" aria-hidden="true"></span></figure>
+      <div class="dk-cap"><span class="dk-num">03</span><h3>NICU &amp; maternity</h3><p>From first heartbeat to first breath, with a team that never blinks.</p></div>
+    </article>
+    <article class="dk-card" data-i="3">
+      <figure class="dk-pic"><img src="../Images/care-25.webp" alt="Imaging suite"><span class="dk-scan" aria-hidden="true"></span></figure>
+      <div class="dk-cap"><span class="dk-num">04</span><h3>Imaging &amp; MRI</h3><p>Answers in minutes — read by humans, double-checked by machines.</p></div>
+    </article>
+    <article class="dk-card" data-i="4">
+      <figure class="dk-pic"><img src="../Images/care-24.webp" alt="Rehab gym"><span class="dk-scan" aria-hidden="true"></span></figure>
+      <div class="dk-cap"><span class="dk-num">05</span><h3>Rehab &amp; physio</h3><p>Strength rebuilt one honest session at a time — with a plan you keep.</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= 09 · ROUNDS LOG ================= -->
+<section class="dr" id="cases">
+  <div class="container">
+    <div class="sec-head dr-head">
+      <div>
+        <span class="eyebrow"><i class="fa-solid fa-book-medical"></i> From the logbook</span>
+        <h2 class="sec-title">Recent <em>rounds</em>, honestly kept</h2>
+      </div>
+      <div class="sec-head-side"><p>Hover a line to peek at the room. No lorem, just last week.</p></div>
+    </div>
+
+    <ul class="dr-list" id="drList">
+      <li class="dr-row" data-img="../Images/care-11.webp">
+        <img class="dr-thumb" src="../Images/care-11.webp" alt="Cardiac rescue room">
+        <span class="dr-i">M-01</span>
+        <span class="dr-name">Midnight chest-pain call</span>
+        <span class="dr-tag"><i class="fa-solid fa-heart-pulse"></i> Cardiology</span>
+        <span class="dr-out">41 min to balloon</span>
+        <i class="fa-solid fa-arrow-up-right-from-square dr-ar"></i>
+      </li>
+      <li class="dr-row" data-img="../Images/care-14.webp">
+        <img class="dr-thumb" src="../Images/care-14.webp" alt="Neonatal unit">
+        <span class="dr-i">T-02</span>
+        <span class="dr-name">A 980-gram hello</span>
+        <span class="dr-tag"><i class="fa-solid fa-baby"></i> Maternity</span>
+        <span class="dr-out">Home in 46 days</span>
+        <i class="fa-solid fa-arrow-up-right-from-square dr-ar"></i>
+      </li>
+      <li class="dr-row" data-img="../Images/care-16.webp">
+        <img class="dr-thumb" src="../Images/care-16.webp" alt="Imaging review">
+        <span class="dr-i">W-03</span>
+        <span class="dr-name">Melanoma caught at 3 mm</span>
+        <span class="dr-tag"><i class="fa-solid fa-hand-dots"></i> Dermatology</span>
+        <span class="dr-out">Clear margins</span>
+        <i class="fa-solid fa-arrow-up-right-from-square dr-ar"></i>
+      </li>
+      <li class="dr-row" data-img="../Images/care-24.webp">
+        <img class="dr-thumb" src="../Images/care-24.webp" alt="Rehab gym">
+        <span class="dr-i">T-04</span>
+        <span class="dr-name">Ten kilometres, again</span>
+        <span class="dr-tag"><i class="fa-solid fa-bone"></i> Orthopedics</span>
+        <span class="dr-out">Back to 10K</span>
+        <i class="fa-solid fa-arrow-up-right-from-square dr-ar"></i>
+      </li>
+      <li class="dr-row" data-img="../Images/care-19.webp">
+        <img class="dr-thumb" src="../Images/care-19.webp" alt="Ward corridor">
+        <span class="dr-i">F-05</span>
+        <span class="dr-name">A name remembered</span>
+        <span class="dr-tag"><i class="fa-solid fa-hand-holding-heart"></i> Community</span>
+        <span class="dr-out">Discharged smiling</span>
+        <i class="fa-solid fa-arrow-up-right-from-square dr-ar"></i>
+      </li>
+    </ul>
+
+    <div class="dr-preview" id="drPreview" aria-hidden="true"><img id="drImg" src="../Images/care-11.webp" alt=""></div>
+  </div>
+</section>
+
+<!-- ================= 10 · COMMUNITY WALL ================= -->
+<section class="dw" id="community">
+  <div class="container">
+    <div class="sec-head sec-head--center dw-head">
+      <span class="eyebrow"><i class="fa-solid fa-people-roof"></i> Beyond the consult</span>
+      <h2 class="sec-title">The faces of <em>Stackly</em></h2>
+      <p class="dw-sub">Nurses, porters, chefs, physios — the people who make a hospital a place you'd return to.</p>
+    </div>
+  </div>
+
+  <div class="container dw-cols" id="dwCols">
+    <div class="dw-col dw-col--a">
+      <figure class="dw-shot"><img src="../Images/care-01.webp" alt="Care team"><figcaption>Ward 001 · morning huddle</figcaption></figure>
+      <figure class="dw-shot"><img src="../Images/doctor-06.webp" alt="Dr. Lena Park"><figcaption>Dr. Lena Park · oncology</figcaption></figure>
+      <figure class="dw-shot"><img src="../Images/care-05.webp" alt="Community care"><figcaption>Community outreach day</figcaption></figure>
+    </div>
+    <div class="dw-col dw-col--b">
+      <figure class="dw-shot"><img src="../Images/doctor-13.webp" alt="Dr. Ines Duarte"><figcaption>Dr. Ines Duarte · pediatrics</figcaption></figure>
+      <figure class="dw-shot"><img src="../Images/care-13.webp" alt="Diagnostics lab"><figcaption>The diagnostics bench</figcaption></figure>
+      <figure class="dw-shot"><img src="../Images/care-33.webp" alt="Corridor"><figcaption>Between rounds</figcaption></figure>
+    </div>
+    <div class="dw-col dw-col--c">
+      <figure class="dw-shot"><img src="../Images/care-09.webp" alt="Theatre team"><figcaption>Scrub-in at dawn</figcaption></figure>
+      <figure class="dw-shot"><img src="../Images/doctor-18.webp" alt="Dr. Priya Nand"><figcaption>Dr. Priya Nand · dermatology</figcaption></figure>
+      <figure class="dw-shot"><img src="../Images/care-27.webp" alt="Campus at dusk"><figcaption>The campus at dusk</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 11 · BOOK A DOCTOR ================= -->
+<section class="dc" id="booking">
+  <div class="dc-banner">
+    <figure class="dc-bg"><img src="../Images/doctor-18.webp" alt="The Stackly care team"></figure>
+    <span class="dc-scrim" aria-hidden="true"></span>
+    <div class="dc-copy">
+      <p class="dc-eyebrow"><i class="fa-solid fa-calendar-check"></i> Ready when you are</p>
+      <h2 class="dc-title">Pick a doctor.<br><em>We'll hold the door.</em></h2>
+      <p class="dc-lead">Tell us the department and we'll match you to the right specialist — usually within the hour.</p>
+      <div class="dc-actions">
+        <a href="404.html" class="btn btn-amber" data-magnetic><span>Book an appointment <i class="fa-solid fa-arrow-right-long"></i></span></a>
+        <a href="404.html" class="btn btn-line btn-line--light" data-magnetic><span><i class="fa-solid fa-phone-volume"></i> Call the desk</span></a>
+      </div>
+      <div class="dc-mini">
+        <span class="dc-avas"><img src="../Images/doctor-05.webp" alt="Doctor"><img src="../Images/doctor-11.webp" alt="Doctor"><img src="../Images/doctor-13.webp" alt="Doctor"><img src="../Images/care-13.webp" alt="Nurse"></span>
+        <p><b>240+</b> specialists · <b>15 min</b> average reply</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= 12 · FOOTER ================= -->
+<footer class="footer" id="footer">
+  <div class="container footer-grid">
+    <div class="foot-brand">
+      <a href="../index.html" class="brand brand--foot">
+        <img class="brand-logo" src="../Images/logo-full.webp" alt="Stackly">
+        
+      </a>
+      <p>Stackly is the healthcare management system built around you — uniting 240+
+        specialists, smart diagnostics and human warmth under one roof.</p>
+      <div class="foot-social">
+        <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="foot-col">
+      <h4>Quick Links</h4>
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="foot-col">
+      <h4>Departments</h4>
+      <a href="404.html">Cardiology</a>
+      <a href="404.html">Neurology</a>
+      <a href="404.html">Maternity &amp; NICU</a>
+      <a href="404.html">Precision labs</a>
+      <a href="404.html">Emergency 24/7</a>
+    </div>
+
+    <div class="foot-col foot-contact">
+      <h4>Get in touch</h4>
+      <a href="404.html"><i class="fa-solid fa-envelope"></i> info@stackly.com</a>
+      <a href="404.html"><i class="fa-solid fa-phone-volume"></i> +91 9745634567</a>
+      <a href="404.html"><i class="fa-solid fa-location-dot"></i> MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil,<br>Salem, Tamil Nadu 636008</a>
+    </div>
+
+    <div class="foot-col foot-news">
+      <h4>Newsletter</h4>
+      <p>One gentle email a month — health tips, offers and zero spam.</p>
+      <form class="news-form" id="newsForm" novalidate>
+        <div class="nf-row">
+          <input type="email" id="newsEmail" placeholder="Your email address" aria-label="Newsletter email">
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <p class="nf-err" id="newsErr" hidden><i class="fa-solid fa-circle-exclamation"></i> Please enter a valid email address.</p>
+        <p class="nf-ok" id="newsOk" hidden><i class="fa-solid fa-circle-check"></i> You're on the list — welcome to Stackly!</p>
+      </form>
+    </div>
+  </div>
+
+  <div class="foot-marquee" aria-hidden="true">
+    <div class="fm-track" data-mq="2">
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Stackly All Rights Reserved</p>
+      <div class="foot-legal">
+        <a href="404.html">Terms &amp; Conditions</a>
+        <a href="404.html">Privacy Policy</a>
+        <a href="404.html">Cookie Settings</a>
+      </div>
+      <p class="foot-made">Crafted with <i class="fa-solid fa-heart"></i> for healthier days</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up-long"></i></button>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+<script src="../JS/doctors-lottie.js"></script>
+<script src="../JS/doctors.js"></script>
+</body>
+</html>

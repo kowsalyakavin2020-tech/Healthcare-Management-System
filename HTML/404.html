@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — This page has flatlined · Stackly</title>
+  <meta name="description" content="404 — the page you were looking for could not be found. Head back home or go back to the previous page.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/webp" href="../Images/logo-icon.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/404.css">
+</head>
+<body>
+
+<main class="nf" id="nf">
+  <span class="nf-grid" aria-hidden="true"></span>
+  <span class="nf-glow nf-glow--a" aria-hidden="true"></span>
+  <span class="nf-glow nf-glow--b" aria-hidden="true"></span>
+  <span class="nf-glow nf-glow--c" aria-hidden="true"></span>
+
+  <div class="nf-stage" id="nfStage">
+
+    <!-- logo + error label (outside the ring · above) -->
+    <header class="nf-top">
+      <a class="nf-logo" href="../index.html" aria-label="Stackly home">
+        <img src="../Images/logo-full.webp" alt="Stackly">
+      </a>
+      <p class="nf-kicker"><i class="fa-solid fa-triangle-exclamation"></i> Error 404 · Room not found</p>
+    </header>
+
+    <!-- the ring (inside: NO SIGNAL · 404 · title) -->
+    <div class="nf-ringbox">
+      <div class="nf-orbit" id="nfOrbit" aria-hidden="true">
+        <span class="nf-ring nf-ring--a"></span>
+        <span class="nf-ring nf-ring--b"></span>
+        <span class="nf-node" style="--a:0"><i class="fa-solid fa-heart-pulse"></i></span>
+        <span class="nf-node" style="--a:60"><i class="fa-solid fa-stethoscope"></i></span>
+        <span class="nf-node" style="--a:120"><i class="fa-solid fa-pills"></i></span>
+        <span class="nf-node" style="--a:180"><i class="fa-solid fa-user-doctor"></i></span>
+        <span class="nf-node" style="--a:240"><i class="fa-solid fa-syringe"></i></span>
+        <span class="nf-node" style="--a:300"><i class="fa-solid fa-heart"></i></span>
+      </div>
+
+      <div class="nf-core" id="nfCore">
+        <div class="nf-code-wrap">
+          <div class="nf-code">
+            <span class="nf-digit nf-digit--a" aria-hidden="true">4</span>
+            <button class="nf-monitor" id="nfMonitor" type="button" aria-label="Revive the heart monitor">
+              <span class="nf-ecg" id="nfEcg" aria-hidden="true"></span>
+              <span class="nf-sweep" aria-hidden="true"></span>
+              <span class="nf-dot" aria-hidden="true"></span>
+              <span class="nf-flash" aria-hidden="true"></span>
+            </button>
+            <span class="nf-digit nf-digit--b" aria-hidden="true">4</span>
+          </div>
+          <span class="nf-tag" id="nfTag"><i class="fa-solid fa-circle" aria-hidden="true"></i> NO SIGNAL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- copy + actions (outside the ring · below) -->
+    <div class="nf-bottom">
+      <p class="nf-sub">We checked every ward — the page you're after isn't here. It may have moved, changed its name, or never existed at all.</p>
+
+      <div class="nf-actions">
+        <a href="../index.html" class="btn btn-fill" data-magnetic><span><i class="fa-solid fa-house"></i> Back to Home</span></a>
+        <button type="button" class="btn btn-line" id="nfBack" data-magnetic><span><i class="fa-solid fa-arrow-left-long"></i> Go Back</span></button>
+      </div>
+
+      <p class="nf-hint"><i class="fa-solid fa-hand-pointer"></i> Tap the heart monitor to revive it</p>
+    </div>
+  </div>
+
+  <span class="nf-scanline" aria-hidden="true"></span>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="../JS/404.js"></script>
+</body>
+</html>

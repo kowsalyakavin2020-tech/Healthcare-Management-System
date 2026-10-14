@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Care for every hour at Stackly</title>
+  <meta name="description" content="Stackly services: 24/7 emergency, cardiology, pediatrics, orthopedics, radiology, virtual care, diagnostics and transparent billing — all under one roof.">
+  <link rel="icon" type="image/webp" href="../Images/logo-icon.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/service.css">
+</head>
+<body>
+
+<!-- ================= PRELOADER ================= -->
+<div id="preloader">
+  <div class="pre-grid"></div>
+  <div class="pre-center">
+    <div class="pre-orbit">
+      <span class="pre-pulse"></span>
+      <span class="pre-ring pre-ring--a"></span>
+      <span class="pre-ring pre-ring--b"></span>
+      <span class="pre-ring pre-ring--c"></span>
+      <span class="pre-cross pre-cross--1"><i class="fa-solid fa-plus"></i></span>
+      <span class="pre-cross pre-cross--2"><i class="fa-solid fa-star-of-life"></i></span>
+      <span class="pre-cross pre-cross--3"><i class="fa-solid fa-plus"></i></span>
+      <span class="pre-cross pre-cross--4"><i class="fa-solid fa-star-of-life"></i></span>
+      <div class="pre-intro-mark"><img class="pre-intro-logo" src="../Images/logo-icon.webp" alt=""></div>
+    </div>
+    <div class="pre-name">
+      <span class="pre-letter">S</span><span class="pre-letter">T</span><span class="pre-letter">A</span><span class="pre-letter">C</span><span class="pre-letter">K</span><span class="pre-letter">L</span><span class="pre-letter">Y</span>
+    </div>
+    <div class="ecg" id="ecg" aria-hidden="true"></div>
+    <div class="pre-count"><span id="preCount">0</span><em>%</em></div>
+    <div class="pre-progress"><span id="preBar"></span></div>
+    <div class="pre-tag"><i class="fa-solid fa-house-medical"></i> care for every hour</div>
+  </div>
+</div>
+
+<!-- ================= 01 · HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <a href="../index.html" class="brand">
+    <img class="brand-logo" src="../Images/logo-full.webp" alt="Stackly">
+    
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="#top" class="nav-link nav-active">Services</a>
+    <a href="doctors.html" class="nav-link">Doctors</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <div class="header-cta">
+    <a href="login.html" class="btn btn-mini" data-magnetic><span>Login <i class="fa-solid fa-arrow-right-long"></i></span></a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- full-screen mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mm-top">
+    <a href="../index.html" class="brand brand--mobile">
+      <img class="brand-logo" src="../Images/logo-full.webp" alt="Stackly">
+      
+    </a>
+    <button class="mm-close" id="mmClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="mm-nav">
+    <a href="../index.html" class="mm-link" style="--i:1"><span>01</span>Home</a>
+    <a href="about.html" class="mm-link" style="--i:2"><span>02</span>About</a>
+    <a href="#top" class="mm-link mm-link--active" style="--i:3" aria-current="page"><span>03</span>Services</a>
+    <a href="doctors.html" class="mm-link" style="--i:4"><span>04</span>Doctors</a>
+    <a href="contact.html" class="mm-link" style="--i:5"><span>05</span>Contact</a>
+  </nav>
+  <div class="mm-bottom">
+    <a href="login.html" class="mm-login" style="--i:6"><i class="fa-solid fa-user-plus"></i> Login to your health account</a>
+    <div class="mm-contact">
+      <span><i class="fa-solid fa-phone-volume"></i> +91 9745634567</span>
+      <span><i class="fa-solid fa-envelope"></i> info@stackly.com</span>
+    </div>
+    <div class="mm-social">
+      <a href="#!" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#!" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#!" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#!" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#!" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<main id="services">
+
+<!-- ================= 02 · HERO ================= -->
+<section class="svc-hero" id="top">
+  <span class="sh-glow" aria-hidden="true"></span>
+
+  <div class="container sh-top">
+    <p class="eyebrow"><i class="fa-solid fa-house-medical"></i> Services · always open</p>
+    <h1 class="sh-title-big">Every kind of care,<br><span class="sh-rot"><em id="shRot">emergency</em></span> under one roof.</h1>
+    <p class="sh-lede">From a midnight fever to a planned procedure, Stackly routes you to the right specialist in minutes — with records, labs and billing that finally talk to each other.</p>
+    <div class="sh-actions">
+      <a href="404.html" class="btn btn-fill" data-magnetic><span>Explore services <i class="fa-solid fa-arrow-right-long"></i></span></a>
+      <a href="404.html" class="btn btn-line" data-magnetic><span><i class="fa-solid fa-calendar-check"></i> Book a visit</span></a>
+    </div>
+    <div class="sh-cast">
+      <div class="sh-cast-faces">
+        <figure><img src="../Images/doctor-03.webp" alt="A Stackly doctor"></figure>
+        <figure><img src="../Images/doctor-08.webp" alt="A Stackly nurse"></figure>
+        <figure><img src="../Images/doctor-11.webp" alt="A Stackly specialist"></figure>
+        <figure><img src="../Images/doctor-14.webp" alt="A Stackly paramedic"></figure>
+      </div>
+      <span class="sh-cast-note"><i class="fa-solid fa-circle-check"></i> <b>38</b> departments · always staffed</span>
+    </div>
+  </div>
+
+  <div class="sh-panels" id="shPanels">
+    <article class="sh-pnl is-open" tabindex="0">
+      <img src="../Images/care-21.webp" alt="Emergency department at Stackly">
+      <div class="sh-pnl-body">
+        <span class="sh-pnl-ico"><i class="fa-solid fa-truck-medical"></i></span>
+        <h3>Emergency</h3>
+        <p>24/7 resus, trauma bays and a fast-track minors lane.</p>
+      </div>
+    </article>
+    <article class="sh-pnl" tabindex="0">
+      <img src="../Images/care-22.webp" alt="Cardiology suite at Stackly">
+      <div class="sh-pnl-body">
+        <span class="sh-pnl-ico"><i class="fa-solid fa-heart-pulse"></i></span>
+        <h3>Cardiology</h3>
+        <p>Cath lab, echo and a same-day chest-pain clinic.</p>
+      </div>
+    </article>
+    <article class="sh-pnl" tabindex="0">
+      <img src="../Images/care-23.webp" alt="Pediatrics ward at Stackly">
+      <div class="sh-pnl-body">
+        <span class="sh-pnl-ico"><i class="fa-solid fa-baby"></i></span>
+        <h3>Pediatrics</h3>
+        <p>Gentle care for newborns through teens, parents welcome.</p>
+      </div>
+    </article>
+    <article class="sh-pnl" tabindex="0">
+      <img src="../Images/care-24.webp" alt="Orthopedics theatre at Stackly">
+      <div class="sh-pnl-body">
+        <span class="sh-pnl-ico"><i class="fa-solid fa-bone"></i></span>
+        <h3>Orthopedics</h3>
+        <p>Joint replacement, sports injury and robotic surgery.</p>
+      </div>
+    </article>
+    <article class="sh-pnl" tabindex="0">
+      <img src="../Images/care-25.webp" alt="Radiology imaging at Stackly">
+      <div class="sh-pnl-body">
+        <span class="sh-pnl-ico"><i class="fa-solid fa-x-ray"></i></span>
+        <h3>Radiology</h3>
+        <p>MRI, CT and ultrasound read by on-site specialists.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="sh-strip" aria-hidden="true" data-mq="12">
+    <span>EMERGENCY</span><i class="fa-solid fa-plus"></i><span>CARDIOLOGY</span><i class="fa-solid fa-plus"></i><span>PEDIATRICS</span><i class="fa-solid fa-plus"></i><span>ORTHOPEDICS</span><i class="fa-solid fa-plus"></i><span>RADIOLOGY</span><i class="fa-solid fa-plus"></i><span>MATERNITY</span><i class="fa-solid fa-plus"></i>
+    <span>EMERGENCY</span><i class="fa-solid fa-plus"></i><span>CARDIOLOGY</span><i class="fa-solid fa-plus"></i><span>PEDIATRICS</span><i class="fa-solid fa-plus"></i><span>ORTHOPEDICS</span><i class="fa-solid fa-plus"></i><span>RADIOLOGY</span><i class="fa-solid fa-plus"></i><span>MATERNITY</span><i class="fa-solid fa-plus"></i>
+  </div>
+</section>
+
+<!-- ================= 03 · CARE LINES ================= -->
+<section class="svc-lines" id="care">
+  <div class="container">
+    <div class="sec-head sec-head--center">
+      <span class="eyebrow"><i class="fa-solid fa-table-cells-large"></i> Our care lines</span>
+      <h2 class="sec-title">Six doors into the <em>same team</em></h2>
+      <p class="sl-lede">Whatever brings you in, one record follows you through every door.</p>
+    </div>
+    <div class="sl-grid">
+      <article class="sl-card">
+        <figure class="sl-pic"><img src="../Images/care-02.webp" alt="Emergency department at Stackly"><span class="sl-ico"><i class="fa-solid fa-truck-medical"></i></span></figure>
+        <div class="sl-body">
+          <h3>Emergency &amp; trauma</h3>
+          <p>Resus bays staffed around the clock, with stroke and cardiac fast-tracks.</p>
+          <ul><li><i class="fa-solid fa-circle-check"></i> 8-min response</li><li><i class="fa-solid fa-circle-check"></i> 24/7 consultants</li></ul>
+        </div>
+      </article>
+      <article class="sl-card">
+        <figure class="sl-pic"><img src="../Images/care-03.webp" alt="Cardiology suite at Stackly"><span class="sl-ico"><i class="fa-solid fa-heart-pulse"></i></span></figure>
+        <div class="sl-body">
+          <h3>Cardiology</h3>
+          <p>Cath labs, arrhythmia clinics and heart-failure programmes under one lead.</p>
+          <ul><li><i class="fa-solid fa-circle-check"></i> Same-day ECG</li><li><i class="fa-solid fa-circle-check"></i> Remote monitors</li></ul>
+        </div>
+      </article>
+      <article class="sl-card">
+        <figure class="sl-pic"><img src="../Images/care-04.webp" alt="Pediatrics ward at Stackly"><span class="sl-ico"><i class="fa-solid fa-baby"></i></span></figure>
+        <div class="sl-body">
+          <h3>Pediatrics</h3>
+          <p>Kid-sized rooms, play specialists and a NICU that never sleeps.</p>
+          <ul><li><i class="fa-solid fa-circle-check"></i> NICU &amp; PICU</li><li><i class="fa-solid fa-circle-check"></i> 24h paediatrics</li></ul>
+        </div>
+      </article>
+      <article class="sl-card">
+        <figure class="sl-pic"><img src="../Images/care-05.webp" alt="Orthopedics theatre at Stackly"><span class="sl-ico"><i class="fa-solid fa-bone"></i></span></figure>
+        <div class="sl-body">
+          <h3>Orthopedics</h3>
+          <p>Joint replacement, sports injury and spine care with robotic precision.</p>
+          <ul><li><i class="fa-solid fa-circle-check"></i> Day-case surgery</li><li><i class="fa-solid fa-circle-check"></i> In-house physio</li></ul>
+        </div>
+      </article>
+      <article class="sl-card">
+        <figure class="sl-pic"><img src="../Images/care-06.webp" alt="Radiology imaging at Stackly"><span class="sl-ico"><i class="fa-solid fa-x-ray"></i></span></figure>
+        <div class="sl-body">
+          <h3>Radiology &amp; imaging</h3>
+          <p>MRI, CT and ultrasound reported by specialists, often while you wait.</p>
+          <ul><li><i class="fa-solid fa-circle-check"></i> Low-dose CT</li><li><i class="fa-solid fa-circle-check"></i> Reports in 2h</li></ul>
+        </div>
+      </article>
+      <article class="sl-card">
+        <figure class="sl-pic"><img src="../Images/care-07.webp" alt="Primary care clinic at Stackly"><span class="sl-ico"><i class="fa-solid fa-stethoscope"></i></span></figure>
+        <div class="sl-body">
+          <h3>Primary care</h3>
+          <p>Family doctors who know your history and coordinate everything else.</p>
+          <ul><li><i class="fa-solid fa-circle-check"></i> Same-day GP</li><li><i class="fa-solid fa-circle-check"></i> Preventive plans</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 · JOURNEY ================= -->
+<section class="svc-journey" id="journey">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-head-side">
+        <span class="eyebrow eyebrow--dark"><i class="fa-solid fa-route"></i> How it works</span>
+        <h2 class="sec-title sec-title--dark">From door to <em>discharge</em>, mapped</h2>
+      </div>
+      <figure class="sj-media">
+        <img src="../Images/care-20.webp" alt="Coordinated care at Stackly">
+        <span class="sj-tag"><i class="fa-solid fa-satellite-dish"></i> live tracking</span>
+      </figure>
+    </div>
+    <div class="sj-rail" aria-hidden="true"><span class="sj-fill" id="sjFill"></span></div>
+    <div class="sj-steps">
+      <div class="sj-step">
+        <span class="sj-n">01</span>
+        <figure class="sj-thumb"><img src="../Images/care-11.webp" alt="Check in"><i class="fa-solid fa-id-card-clip"></i></figure>
+        <h3>Arrive &amp; check in</h3>
+        <p>One scan of your ID pulls your whole history to the right desk.</p>
+      </div>
+      <div class="sj-step">
+        <span class="sj-n">02</span>
+        <figure class="sj-thumb"><img src="../Images/care-12.webp" alt="Triage"><i class="fa-solid fa-stethoscope"></i></figure>
+        <h3>Triage &amp; tests</h3>
+        <p>Nurse-led triage orders only the tests you actually need.</p>
+      </div>
+      <div class="sj-step">
+        <span class="sj-n">03</span>
+        <figure class="sj-thumb"><img src="../Images/care-13.webp" alt="Specialist"><i class="fa-solid fa-user-doctor"></i></figure>
+        <h3>See your specialist</h3>
+        <p>Results reach the consultant before you reach the room.</p>
+      </div>
+      <div class="sj-step">
+        <span class="sj-n">04</span>
+        <figure class="sj-thumb"><img src="../Images/care-15.webp" alt="Recovery"><i class="fa-solid fa-house-medical-circle-check"></i></figure>
+        <h3>Recover &amp; follow up</h3>
+        <p>A care plan and a check-in call follow you home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 · EMERGENCY ================= -->
+<section class="svc-er" id="er">
+  <div class="container er-grid">
+    <div class="er-copy">
+      <span class="er-eyebrow"><i class="fa-solid fa-triangle-exclamation"></i> Emergency · 24/7/365</span>
+      <h2 class="er-title">When seconds <em>matter</em>, we're already moving.</h2>
+      <p>Our emergency line dispatches the nearest team, pre-books the resus bay and has your records up before the doors open.</p>
+      <a href="404.html" class="er-call">
+        <i class="fa-solid fa-phone-volume"></i>
+        <span>Call Now<em>+91 9745634567</em></span>
+      </a>
+      <div class="er-chips">
+        <span><i class="fa-solid fa-siren-on"></i> Stroke unit</span>
+        <span><i class="fa-solid fa-heart-pulse"></i> Cardiac bay</span>
+        <span><i class="fa-solid fa-truck-medical"></i> 12 ambulances</span>
+      </div>
+    </div>
+    <figure class="er-photo">
+      <img src="../Images/care-21.webp" alt="Emergency responders at Stackly">
+      <span class="er-badge"><i class="fa-solid fa-stopwatch"></i><b>8:00</b><em>avg response</em></span>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= 06 · VIRTUAL CARE ================= -->
+<section class="svc-virtual" id="virtual">
+  <div class="container sv-grid">
+    <div class="sv-screen">
+      <img src="../Images/care-16.webp" alt="A Stackly virtual consultation">
+      <span class="sv-live"><i class="fa-solid fa-circle"></i> LIVE</span>
+      <span class="sv-name"><i class="fa-solid fa-user-doctor"></i> Dr. A. Reyes · GP</span>
+      <span class="sv-vitals"><i class="fa-solid fa-heart-pulse"></i> HR 74 · SpO&#8322; 98%</span>
+      <span class="sv-bar"><b id="svTimer">12:04</b></span>
+      <button type="button" class="sv-ctrl sv-mic" aria-label="Mute microphone"><i class="fa-solid fa-microphone"></i></button>
+      <button type="button" class="sv-ctrl sv-cam" aria-label="Start video"><i class="fa-solid fa-video"></i></button>
+      <button type="button" class="sv-ctrl sv-end" aria-label="End call"><i class="fa-solid fa-phone"></i></button>
+    </div>
+    <div class="sv-copy">
+      <span class="eyebrow"><i class="fa-solid fa-video"></i> Virtual care</span>
+      <h2 class="sec-title">A specialist in your <em>living room</em></h2>
+      <p>Video visits that prescribe, refer and reassure — with the same clinicians you'd see in the building.</p>
+      <ul class="sv-list">
+        <li><i class="fa-solid fa-clock"></i><span><b>Opens in 60 seconds</b> No app download, joins from the browser.</span></li>
+        <li><i class="fa-solid fa-prescription-bottle-medical"></i><span><b>E-prescriptions</b> Sent to your pharmacy before you hang up.</span></li>
+        <li><i class="fa-solid fa-file-medical"></i><span><b>Shared record</b> Your notes flow straight into your in-person file.</span></li>
+        <li><i class="fa-solid fa-lock"></i><span><b>Private by default</b> End-to-end encrypted, never recorded.</span></li>
+      </ul>
+      <a href="404.html" class="btn btn-amber" data-magnetic><span><i class="fa-solid fa-video"></i> Start a video visit</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 07 · LABS & DIAGNOSTICS ================= -->
+<section class="svc-labs" id="labs">
+  <div class="container">
+    <div class="lb-head">
+      <span class="eyebrow eyebrow--dark"><i class="fa-solid fa-flask-vial"></i> Labs &amp; diagnostics</span>
+      <h2 class="sec-title sec-title--dark">Answers in <em>hours</em>, not weeks</h2>
+      <p>An on-site laboratory and six imaging suites mean fewer trips and faster decisions — reviewed by pathologists, never parked in a queue.</p>
+    </div>
+
+    <div class="lb-stage">
+      <div class="lb-viz" aria-hidden="true">
+        <span class="lb-orbit lb-orbit--a"></span>
+        <span class="lb-orbit lb-orbit--b"></span>
+        <span class="lb-orbit lb-orbit--c"></span>
+        <div class="lb-core">
+          <b class="count" data-count="98">0</b><em>% accuracy</em>
+        </div>
+        <span class="lb-node lb-node--1"><i class="fa-solid fa-vial"></i> Bloods</span>
+        <span class="lb-node lb-node--2"><i class="fa-solid fa-microscope"></i> Biopsy</span>
+        <span class="lb-node lb-node--3"><i class="fa-solid fa-dna"></i> Genomics</span>
+        <span class="lb-node lb-node--4"><i class="fa-solid fa-x-ray"></i> Imaging</span>
+      </div>
+
+      <div class="lb-rows">
+        <div class="lb-row">
+          <span class="lb-ic"><i class="fa-solid fa-droplet"></i></span>
+          <div class="lb-txt"><b>Complete blood count</b><span>Haematology</span></div>
+          <div class="lb-track"><i data-w="92"></i></div>
+          <em>45 min</em>
+        </div>
+        <div class="lb-row">
+          <span class="lb-ic"><i class="fa-solid fa-heart-pulse"></i></span>
+          <div class="lb-txt"><b>Lipid &amp; metabolic panel</b><span>Biochemistry</span></div>
+          <div class="lb-track"><i data-w="78"></i></div>
+          <em>2 hrs</em>
+        </div>
+        <div class="lb-row">
+          <span class="lb-ic"><i class="fa-solid fa-shield-virus"></i></span>
+          <div class="lb-txt"><b>Thyroid &amp; hormone panel</b><span>Endocrinology</span></div>
+          <div class="lb-track"><i data-w="66"></i></div>
+          <em>4 hrs</em>
+        </div>
+        <div class="lb-row">
+          <span class="lb-ic"><i class="fa-solid fa-microscope"></i></span>
+          <div class="lb-txt"><b>Tissue pathology</b><span>Histology</span></div>
+          <div class="lb-track"><i data-w="74"></i></div>
+          <em>24 hrs</em>
+        </div>
+        <div class="lb-row">
+          <span class="lb-ic"><i class="fa-solid fa-dna"></i></span>
+          <div class="lb-txt"><b>Genomic sequencing</b><span>Precision medicine</span></div>
+          <div class="lb-track"><i data-w="58"></i></div>
+          <em>72 hrs</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="lb-foot">
+      <div><b class="count" data-count="120">0</b><em>tests per panel</em></div>
+      <div><b class="count" data-count="2">0</b><em>hrs avg turnaround</em></div>
+      <div><b>24/7</b><em>walk-in lab</em></div>
+      <div><b>06</b><em>imaging suites</em></div>
+    </div>
+  </div>
+
+  <div class="lb-mq" aria-hidden="true">
+    <div class="lb-mq-track" data-mq="12">
+      <span>Bloods</span><i class="fa-solid fa-plus"></i><span>Pathology</span><i class="fa-solid fa-plus"></i><span>MRI &amp; CT</span><i class="fa-solid fa-plus"></i><span>Genomics</span><i class="fa-solid fa-plus"></i><span>Ultrasound</span><i class="fa-solid fa-plus"></i><span>ECG</span><i class="fa-solid fa-plus"></i>
+      <span>Bloods</span><i class="fa-solid fa-plus"></i><span>Pathology</span><i class="fa-solid fa-plus"></i><span>MRI &amp; CT</span><i class="fa-solid fa-plus"></i><span>Genomics</span><i class="fa-solid fa-plus"></i><span>Ultrasound</span><i class="fa-solid fa-plus"></i><span>ECG</span><i class="fa-solid fa-plus"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 08 · INSURANCE & BILLING ================= -->
+<section class="svc-insure" id="insurance">
+  <div class="container">
+    <div class="sec-head sec-head--center">
+      <span class="eyebrow"><i class="fa-solid fa-shield-heart"></i> Insurance &amp; billing</span>
+      <h2 class="sec-title">Covered by <em>the names you trust</em></h2>
+    </div>
+    <div class="in-partners">
+      <div class="in-p"><i class="fa-solid fa-umbrella"></i><b>Aetna</b></div>
+      <div class="in-p"><i class="fa-solid fa-cross"></i><b>BlueShield</b></div>
+      <div class="in-p"><i class="fa-solid fa-leaf"></i><b>Cigna</b></div>
+      <div class="in-p"><i class="fa-solid fa-plus"></i><b>MultiPlan</b></div>
+      <div class="in-p"><i class="fa-solid fa-heart"></i><b>Humana</b></div>
+    </div>
+    <div class="in-bill">
+      <figure class="in-photo"><img src="../Images/care-35.webp" alt="Billing support at Stackly"></figure>
+      <div class="in-copy">
+        <h3>Transparent bills, zero surprises</h3>
+        <p>See what you'll pay before care begins, with a real person on the line if a claim needs chasing.</p>
+        <div class="in-toggle" id="inToggle">
+          <button class="in-tab is-on" data-mode="insured" type="button"><i class="fa-solid fa-shield-heart"></i> Insured</button>
+          <button class="in-tab" data-mode="self" type="button"><i class="fa-solid fa-wallet"></i> Self-pay</button>
+        </div>
+        <p class="in-price" id="inPrice"><i class="fa-solid fa-circle-check"></i> In-network · $0 typical copay</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 09 · PATIENT STORIES ================= -->
+<section class="svc-stories" id="stories">
+  <div class="container">
+    <div class="sec-head sec-head--center">
+      <span class="eyebrow"><i class="fa-solid fa-comment-medical"></i> Patient stories</span>
+      <h2 class="sec-title">Care, in their <em>own words</em></h2>
+    </div>
+    <div class="st-row">
+      <figure class="st-card">
+        <div class="st-pic"><img src="../Images/care-08.webp" alt="Maternity patient at Stackly"><span class="st-mark"><i class="fa-solid fa-quote-left"></i></span></div>
+        <blockquote>"They explained every step before my C-section — I never felt like a number."</blockquote>
+        <figcaption>May L. · Maternity</figcaption>
+      </figure>
+      <figure class="st-card">
+        <div class="st-pic"><img src="../Images/care-09.webp" alt="Cardiac patient at Stackly"><span class="st-mark"><i class="fa-solid fa-quote-left"></i></span></div>
+        <blockquote>"My ECG was read before I finished explaining the pain. That speed saved me."</blockquote>
+        <figcaption>Daniel R. · Cardiology</figcaption>
+      </figure>
+      <figure class="st-card">
+        <div class="st-pic"><img src="../Images/care-10.webp" alt="Pediatric patient family at Stackly"><span class="st-mark"><i class="fa-solid fa-quote-left"></i></span></div>
+        <blockquote>"The children's team turned a scary night into something my son still talks about."</blockquote>
+        <figcaption>Priya N. · Pediatrics</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 10 · FAQ ================= -->
+<section class="svc-faq" id="faq">
+  <div class="container faq-grid">
+    <div class="fq-side">
+      <span class="eyebrow"><i class="fa-solid fa-circle-question"></i> Good to know</span>
+      <h2 class="sec-title">Questions, <em>answered</em></h2>
+      <p>Still unsure what you need? Our care navigators will point you to the right door, day or night.</p>
+      <a href="404.html" class="btn btn-fill" data-magnetic><span>Talk to a navigator <i class="fa-solid fa-arrow-right-long"></i></span></a>
+    </div>
+    <div class="fq-list">
+      <details class="fq-item" open>
+        <summary>Do I need a referral to be seen?<i class="fa-solid fa-plus"></i></summary>
+        <p>Not for emergency or primary care — walk in any time. Specialists are faster with a referral, but our navigators can arrange one in minutes if you don't have it.</p>
+      </details>
+      <details class="fq-item">
+        <summary>Which insurance plans do you accept?<i class="fa-solid fa-plus"></i></summary>
+        <p>We're in-network with Aetna, BlueShield, Cigna, MultiPlan, Humana and most regional plans. Bring your card and we'll verify cover before treatment.</p>
+      </details>
+      <details class="fq-item">
+        <summary>Can I see my results online?<i class="fa-solid fa-plus"></i></summary>
+        <p>Yes. Reports, prescriptions and care plans land in your Stackly record the moment they're signed, and you can share them securely with any clinician.</p>
+      </details>
+      <details class="fq-item">
+        <summary>How fast are virtual visits?<i class="fa-solid fa-plus"></i></summary>
+        <p>Most connect in under a minute, 7am to midnight. Outside those hours, an on-call clinician is still reachable by phone.</p>
+      </details>
+      <details class="fq-item">
+        <summary>Do you treat children and adults?<i class="fa-solid fa-plus"></i></summary>
+        <p>Both. Pediatrics, adult specialties and senior care sit side by side, so families can be seen in the same visit whenever possible.</p>
+      </details>
+      <details class="fq-item">
+        <summary>Is parking and access easy?<i class="fa-solid fa-plus"></i></summary>
+        <p>Step-free entrances, 400 parking spaces and a drop-off loop at every clinic, with accessible rooms and interpreters on request.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 11 · BOOK CTA ================= -->
+<section class="svc-cta" id="book">
+  <div class="container">
+    <div class="sc-banner">
+      <img src="../Images/care-14.webp" alt="Book care at Stackly" class="sc-img">
+      <div class="sc-scrim"></div>
+      <div class="sc-copy">
+        <span class="sc-eyebrow"><i class="fa-solid fa-clock"></i> Open 24 hours · 7 days</span>
+        <h2 class="sc-title">Book care in <em>three taps</em></h2>
+        <p>Pick a door, a time and a clinician — or let us choose for you. Same-day slots refresh every morning.</p>
+        <div class="sc-actions">
+          <a href="404.html" class="btn btn-amber" data-magnetic><span><i class="fa-solid fa-calendar-check"></i> Book appointment</span></a>
+          <a href="404.html" class="btn btn-line--light" data-magnetic><span><i class="fa-solid fa-phone-volume"></i> +91 9745634567</span></a>
+        </div>
+        <div class="sc-mini">
+          <span><i class="fa-solid fa-calendar-check"></i> Same-day slots</span>
+          <span><i class="fa-solid fa-language"></i> 12 languages</span>
+          <span><i class="fa-solid fa-wheelchair-move"></i> Step-free access</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= 12 · FOOTER ================= -->
+<footer class="footer" id="footer">
+  <div class="container footer-grid">
+    <div class="foot-brand">
+      <a href="../index.html" class="brand brand--foot">
+        <img class="brand-logo" src="../Images/logo-full.webp" alt="Stackly">
+        
+      </a>
+      <p>Stackly is the healthcare management system built around you — uniting 240+
+        specialists, smart diagnostics and human warmth under one roof.</p>
+      <div class="foot-social">
+        <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="foot-col">
+      <h4>Quick Links</h4>
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="foot-col">
+      <h4>Departments</h4>
+      <a href="404.html">Cardiology</a>
+      <a href="404.html">Neurology</a>
+      <a href="404.html">Maternity &amp; NICU</a>
+      <a href="404.html">Precision labs</a>
+      <a href="404.html">Emergency 24/7</a>
+    </div>
+
+    <div class="foot-col foot-contact">
+      <h4>Get in touch</h4>
+      <a href="404.html"><i class="fa-solid fa-envelope"></i> info@stackly.com</a>
+      <a href="404.html"><i class="fa-solid fa-phone-volume"></i> +91 9745634567</a>
+      <a href="404.html"><i class="fa-solid fa-location-dot"></i> MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil,<br>Salem, Tamil Nadu 636008</a>
+    </div>
+
+    <div class="foot-col foot-news">
+      <h4>Newsletter</h4>
+      <p>One gentle email a month — health tips, offers and zero spam.</p>
+      <form class="news-form" id="newsForm" novalidate>
+        <div class="nf-row">
+          <input type="email" id="newsEmail" placeholder="Your email address" aria-label="Newsletter email">
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <p class="nf-err" id="newsErr" hidden><i class="fa-solid fa-circle-exclamation"></i> Please enter a valid email address.</p>
+        <p class="nf-ok" id="newsOk" hidden><i class="fa-solid fa-circle-check"></i> You're on the list — welcome to Stackly!</p>
+      </form>
+    </div>
+  </div>
+
+  <div class="foot-marquee" aria-hidden="true">
+    <div class="fm-track" data-mq="2">
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+      <span>STACKLY CARE</span><i class="fa-solid fa-heart-pulse"></i>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Stackly All Rights Reserved</p>
+      <div class="foot-legal">
+        <a href="404.html">Terms &amp; Conditions</a>
+        <a href="404.html">Privacy Policy</a>
+        <a href="404.html">Cookie Settings</a>
+      </div>
+      <p class="foot-made">Crafted with <i class="fa-solid fa-heart"></i> for healthier days</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up-long"></i></button>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="../JS/service.js"></script>
+</body>
+</html>
